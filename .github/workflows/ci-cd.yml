@@ -28,7 +28,7 @@ jobs:
           source venv/bin/activate
           pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pytest torch torchvision torchaudio transformers
+          pip install pytest torch torchvision torchaudio transformers sacremoses protobuf
 
       - name: Set PYTHONPATH and Verify Imports
         run: |

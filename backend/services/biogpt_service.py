@@ -30,7 +30,7 @@ def is_valid_question(prompt: str) -> bool:
 
 def generate_biogpt_text(prompt: str, max_length: int = 250):
     """
-    Generates a medically relevant response using BioGPT.
+    Generates a medically relevant response using BioGPT model.
 
     Args:
         prompt (str): The medical question or query.

@@ -159,3 +159,4 @@ config/__pycache__/
 # Ignore all .pyc files
 **/*.pyc
 venv/
+__pycache__/

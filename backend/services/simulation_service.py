@@ -1,7 +1,7 @@
 import random
-from app.models.models import SimulationRequest, SimulationResult
-from app.utils.storage import load_data
-from app.utils.logger import log_info, log_error
+from backend.models.models import SimulationRequest, SimulationResult
+from backend.utils.storage import load_data
+from backend.utils.logger import log_info, log_error
 
 TREATMENT_OPTIONS = ["Treatment A", "Treatment B", "Treatment C"]
 

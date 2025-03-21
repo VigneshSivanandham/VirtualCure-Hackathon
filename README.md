@@ -44,7 +44,7 @@ pip install pydantic[dotenv] requests
 
 ###  Run the API Server
 ```sh
-uvicorn biogpt_service:app --reload
+uvicorn biogpt_service:backend --reload
 ```
 
 ###  Example API Request

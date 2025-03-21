@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from app.utils.logger import log_info, log_error
+from backend.utils.logger import log_info, log_error
 
 def load_data(file_path: str):
     path = Path(file_path)

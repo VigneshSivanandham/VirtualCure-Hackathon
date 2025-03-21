@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from app.models.biogpt_model import BioGPTRequest, BioGPTResponse
-from app.services.biogpt_service import generate_biogpt_text
+from backend.models.biogpt_model import BioGPTRequest, BioGPTResponse
+from backend.services.biogpt_service import generate_biogpt_text
 
 router = APIRouter()
 

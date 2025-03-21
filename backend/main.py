@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes import biogpt
+from backend.routes import biogpt
 
 app = FastAPI(
     title="VirtualCure AI Drug Research API",

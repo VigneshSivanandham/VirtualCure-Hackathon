@@ -26,21 +26,18 @@ jobs:
         run: |
           set -e  # Stop execution if any command fails
           python -m venv venv
-          if [ -f "venv/bin/activate" ]; then
-            source venv/bin/activate
-          else
-            . venv/Scripts/activate  # Windows fallback
-          fi
+          source venv/bin/activate
           pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pytest torch torchvision torchaudio transformers sacremoses protobuf fastapi
+          pip freeze | grep fastapi  # Verify FastAPI is installed
 
       - name: Set PYTHONPATH and Verify Imports
         run: |
           echo "Setting PYTHONPATH..."
           export PYTHONPATH=$(pwd)
           echo "PYTHONPATH set to $PYTHONPATH"
-          python -c "import backend.main" || { echo "❌ Backend module still not found!"; exit 1; }
+          source venv/bin/activate  # Activate virtual environment
+          python -c "import fastapi; import backend.main" || { echo "❌ Backend module still not found!"; exit 1; }
 
       - name: Clean Python Cache
         run: find . -name "__pycache__" -type d -exec rm -r {} +

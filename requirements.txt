@@ -10,3 +10,11 @@ transformers
 pytest
 torchvision
 torchaudio
+python-jose[cryptography]
+passlib[bcrypt]
+groq
+biogpt
+sqlalchemy
+databases[sqlite]
+aiohttp
+python-multipart

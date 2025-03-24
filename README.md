@@ -1,92 +1,219 @@
-# VirtualCure-Hackathon
-AI-driven healthcare assistant for drug research
+# Virtual Cure
 
-# VirtualCure: AI-Powered Medical Assistant
+Virtual Cure is an AI-powered medical diagnosis and drug simulation application that combines a FastAPI backend with a React frontend. The application uses Groq's Mixtral-8x7b model for patient diagnosis and includes a simulated drug interaction analysis system.
 
-## Overview
-VirtualCure is an AI-powered medical assistant designed to provide **clinically relevant** and **contextually accurate** responses to medical queries. Built using **Microsoft's BioGPT**, it enhances **medical decision-making** for healthcare professionals and ensures reliable information for patients.
+## Features
 
----
+- Patient information collection and symptom analysis
+- AI-powered initial medical diagnosis
+- Drug interaction simulation
+- Comprehensive medical summary reports
 
-## Problem Statement
-Many online health resources provide **misleading or unverified** medical information, leading to confusion and potential harm. **VirtualCure** addresses this issue by offering **fact-checked, AI-generated medical insights**, reducing misinformation and supporting doctors, researchers, and patients.
+## Prerequisites
 
----
+- Python 3.8 or higher
+- Node.js 14.x or higher
+- npm 6.x or higher
+- Groq API key
 
-## Key Features
-- **Clinically accurate medical responses** (powered by BioGPT)
-- **Conversational AI for real-time health assistance**
-- **Understands medical terminologies and drug interactions**
-- **REST API for seamless integration into healthcare systems**
-- **Lightweight and scalable deployment options**
+## Project Structure
 
----
+```
+Virtual-Cure/
+├── backend/
+│   ├── main.py
+│   └── requirements.txt
+└── frontend/
+    ├── public/
+    │   ├── index.html
+    │   └── manifest.json
+    ├── src/
+    │   ├── components/
+    │   ├── pages/
+    │   └── App.js
+    └── package.json
+```
 
-## Tech Stack
-- **Model:** [BioGPT (Microsoft)](https://huggingface.co/microsoft/BioGPT)
-- **Framework:** PyTorch, Hugging Face Transformers
-- **Backend:** FastAPI for API handling
-- **Frontend:** React/Next.js (under development)
-- **Deployment:** Docker / AWS / Azure (optional)
-
----
-
-## 🔧 Installation & Setup
-
-### Prerequisites
-- Python 3.8+
-- Node.js (for frontend, if applicable)
+## Installation
 
 ### Backend Setup
-#### 1️⃣ Install Dependencies
-Run the following command to install all required packages:
-```sh
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install transformers fastapi uvicorn pydantic[dotenv] requests
+
+1. Navigate to the backend directory:
+```bash
+cd backend
 ```
 
-#### 2️⃣ Run the API Server
-```sh
-uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+2. Create and activate a virtual environment:
+```bash
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Linux/Mac
+python -m venv venv
+source venv/bin/activate
 ```
 
-#### 3️⃣ Example API Request
-```sh
-curl -X POST "http://localhost:8000/generate" \
-     -H "Content-Type: application/json" \
-     -d '{"query": "How does aspirin work?"}'
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
 ```
 
-### Frontend Setup (If applicable)
-#### 1️⃣ Install Dependencies
-```sh
+4. Set up your Groq API key:
+- Create a `.env` file in the backend directory
+- Add your Groq API key:
+```
+GROQ_API_KEY=your_api_key_here
+```
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+```bash
 cd frontend
+```
+
+2. Install dependencies:
+```bash
 npm install
 ```
 
-#### 2️⃣ Create Environment File
-Create a `.env.local` file inside the `frontend/` folder and add:
-```env
-NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
+## Running the Application
+
+1. Start the backend server (from the backend directory):
+```bash
+uvicorn main:app --reload
 ```
+The backend will run on http://localhost:8000
 
-#### 3️⃣ Start Frontend
-```sh
-npm run dev
+2. Start the frontend development server (from the frontend directory):
+```bash
+npm start
 ```
-Frontend will be available at **http://localhost:3000**
+The frontend will run on http://localhost:3000
 
----
+## Usage
 
-## Sample Queries & Responses
-| **Query** | **AI Response** |
-|-----------|----------------|
-| "How does aspirin work?" | "Aspirin is a potent inhibitor of matrix metalloproteinase-9 expression and activity in human aortic endothelial cells." |
-| "What are the side effects of statins?" | "Statin use is associated with a lower risk for acute pancreatitis." |
+1. **Patient Information Entry**
+   - Enter patient details
+   - Select relevant symptoms
+   - Submit for diagnosis
 
----
+2. **Initial Diagnosis**
+   - Review AI-generated diagnosis
+   - Check confidence level
+   - View medical recommendations
 
-## Deployment Options
-VirtualCure can be deployed using Docker or cloud platforms like AWS/Azure. For local development, simply run the backend and frontend as described above.
+3. **Drug Simulation**
+   - Enter drug details
+   - Review drug interaction analysis
+   - Check potential side effects
 
----
+4. **Summary Report**
+   - View comprehensive medical summary
+   - Review all collected information
+   - Access recommendations
+
+## API Endpoints
+
+- `GET /`: Welcome message
+- `POST /diagnose`: Patient diagnosis endpoint
+- `POST /drug-simulation`: Drug interaction simulation endpoint
+
+### Testing API Endpoints in Postman
+
+1. **Setup Postman**
+   - Download and install [Postman](https://www.postman.com/downloads/)
+   - Create a new collection named "Virtual Cure API"
+
+2. **Testing Diagnosis Endpoint**
+   ```
+   URL: http://localhost:8000/diagnose
+   Method: POST
+   Headers: 
+     Content-Type: application/json
+   Body (raw JSON):
+   {
+     "name": "John Doe",
+     "age": 30,
+     "symptoms": ["Fever", "Cough", "Fatigue"],
+     "id": null,
+     "medical_history": null
+   }
+   ```
+
+3. **Testing Drug Simulation Endpoint**
+   ```
+   URL: http://localhost:8000/drug-simulation
+   Method: POST
+   Headers:
+     Content-Type: application/json
+   Body (raw JSON):
+   {
+     "patient_id": 1,
+     "drug_name": "Aspirin",
+     "dosage": 100,
+     "frequency": "twice daily"
+   }
+   ```
+
+4. **Common HTTP Status Codes**
+   - 200: Successful request
+   - 400: Bad request (check request body)
+   - 422: Validation error (check required fields)
+   - 500: Server error (check backend logs)
+
+5. **Testing Tips**
+   - Ensure the backend server is running
+   - Check that the port (8000) is correct
+   - Verify all required fields are included
+   - Monitor the backend console for error messages
+
+## Technologies Used
+
+- **Backend**
+  - FastAPI
+  - OpenAI Python SDK (for Groq API)
+  - Pydantic
+  - Python-dotenv
+
+- **Frontend**
+  - React
+  - Material-UI
+  - Axios
+  - React Router
+
+## Troubleshooting
+
+1. **Backend Issues**
+   - Ensure virtual environment is activated
+   - Verify Groq API key is correctly set
+   - Check Python version compatibility
+
+2. **Frontend Issues**
+   - Clear npm cache if needed: `npm cache clean --force`
+   - Ensure all dependencies are installed
+   - Check for Node.js version compatibility
+
+3. **API Connection Issues**
+   - Verify backend is running on port 8000
+   - Check CORS settings if needed
+   - Ensure network connectivity
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Groq for providing the AI model API
+- Material-UI for the component library
+- FastAPI for the backend framework

@@ -20,18 +20,41 @@ Virtual Cure is an AI-powered medical diagnosis and drug simulation application 
 
 ```
 Virtual-Cure/
+├── README.md                 # Project documentation
+├── .gitignore               # Git ignore rules for the project
+│
 ├── backend/
-│   ├── main.py
-│   └── requirements.txt
+│   ├── main.py             # FastAPI application with routes and logic
+│   ├── requirements.txt    # Python dependencies
+│   ├── .env               # Environment variables (Groq API key)
+│   └── __pycache__/       # Python bytecode cache (ignored by git)
+│
 └── frontend/
+    ├── package.json        # Node.js dependencies and scripts
+    ├── package-lock.json   # Locked versions of dependencies
+    ├── .gitignore         # Git ignore rules for frontend
+    │
     ├── public/
-    │   ├── index.html
-    │   └── manifest.json
-    ├── src/
-    │   ├── components/
-    │   ├── pages/
-    │   └── App.js
-    └── package.json
+    │   ├── index.html     # HTML entry point
+    │   ├── favicon.ico    # Website icon
+    │   ├── manifest.json  # PWA manifest
+    │   └── robots.txt     # Search engine instructions
+    │
+    └── src/
+        ├── index.js       # React entry point
+        ├── App.js         # Main React component
+        │
+        ├── components/
+        │   └── Navbar.js  # Navigation component
+        │
+        ├── pages/
+        │   ├── UserSelection.js     # Patient info entry page
+        │   ├── InitialDiagnosis.js  # Diagnosis display page
+        │   ├── DrugSimulation.js    # Drug simulation page
+        │   └── Summary.js           # Final report page
+        │
+        └── styles/
+            └── App.css    # Global styles
 ```
 
 ## Installation

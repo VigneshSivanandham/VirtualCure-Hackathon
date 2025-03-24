@@ -24,8 +24,13 @@ jobs:
 
       - name: Install dependencies
         run: |
+          set -e  # Stop execution if any command fails
           python -m venv venv
-          source venv/bin/activate
+          if [ -f "venv/bin/activate" ]; then
+            source venv/bin/activate
+          else
+            . venv/Scripts/activate  # Windows fallback
+          fi
           pip install --upgrade pip
           pip install -r requirements.txt
           pip install pytest torch torchvision torchaudio transformers sacremoses protobuf fastapi
@@ -33,17 +38,18 @@ jobs:
       - name: Set PYTHONPATH and Verify Imports
         run: |
           echo "Setting PYTHONPATH..."
-          export PYTHONPATH=$PYTHONPATH:$(pwd)
+          export PYTHONPATH=$(pwd)
           echo "PYTHONPATH set to $PYTHONPATH"
-          python -c "import backend.main" || echo "Backend module still not found!"
+          python -c "import backend.main" || { echo "❌ Backend module still not found!"; exit 1; }
 
       - name: Clean Python Cache
         run: find . -name "__pycache__" -type d -exec rm -r {} +
 
       - name: Run Tests
         run: |
+          set -e
           source venv/bin/activate
-          export PYTHONPATH=$PYTHONPATH:$(pwd)  # Ensure backend is found
+          export PYTHONPATH=$(pwd)
           pytest tests/
 
   frontend-ci:
@@ -89,18 +95,21 @@ jobs:
 
       - name: Free Up Disk Space
         run: |
+          set -e
           echo "Cleaning up disk space..."
           sudo apt-get clean
           sudo rm -rf /var/lib/apt/lists/*
           sudo rm -rf /usr/share/dotnet
           sudo rm -rf /opt/ghc
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
-          docker system prune -af
+          if [ "$(docker system df -v | grep 'Reclaimable' | awk '{print $2}')" != "0B" ]; then
+            docker system prune -af
+          fi
 
       - name: Verify Dockerfile Exists
         run: |
           if [ ! -f Dockerfile ]; then
-            echo "Error: Dockerfile not found!"
+            echo "❌ Error: Dockerfile not found!"
             exit 1
           fi
 
@@ -109,6 +118,7 @@ jobs:
 
       - name: Save & Compress Docker Image as Artifact
         run: |
+          set -e
           docker save virtualcure-hackathon | gzip > /tmp/virtualcure-hackathon.tar.gz
 
       - name: Upload Docker Image as Artifact

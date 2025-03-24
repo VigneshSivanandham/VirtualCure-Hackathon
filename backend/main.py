@@ -12,7 +12,7 @@ load_dotenv()
 
 # Set Groq API key
 GROQ_API_KEY = "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"
-MODEL_NAME = "mixtral-8x7b-32768"  # Updated to use a supported Groq model
+MODEL_NAME = "deepseek-r1-distill-llama-70b"  # Updated to use a supported Groq model
 
 app = FastAPI(title="Virtual Cure API")
 

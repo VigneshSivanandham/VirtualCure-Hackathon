@@ -217,3 +217,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Groq for providing the AI model API
 - Material-UI for the component library
 - FastAPI for the backend framework
+
+Sample Queries & Responses
+
+Query - "How does aspirin work?"	
+AI Response - "Aspirin is a potent inhibitor of matrix metalloproteinase-9 expression and activity in human aortic endothelial cells."
+Query - "What are the side effects of statins?"	
+AI Response- "Statin use is associated with a lower risk for acute pancreatitis."
+Deployment Options
+VirtualCure can be deployed using Docker or cloud platforms like AWS/Azure. For local development, simply run the backend and frontend as described above.

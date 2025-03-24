@@ -7,3 +7,6 @@ torch
 sacremoses
 protobuf
 transformers
+pytest
+torchvision
+torchaudio

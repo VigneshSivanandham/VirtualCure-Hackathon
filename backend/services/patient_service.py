@@ -1,6 +1,6 @@
-from app.models.models import Patient
-from app.utils.storage import load_data, save_data
-from app.utils.logger import log_info, log_error
+from models.models import Patient
+from utils.storage import load_data, save_data
+from utils.logger import log_info, log_error
 
 PATIENTS_FILE = "VirtualCure/data/patients.json"
 

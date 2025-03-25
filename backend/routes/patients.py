@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from app.services import patient_service
-from app.models.models import Patient
+from services import patient_service
+from models.models import Patient
 
 router = APIRouter(prefix="/patients", tags=["Patients"])
 

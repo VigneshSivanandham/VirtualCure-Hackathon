@@ -178,11 +178,11 @@ const InitialDiagnosis = () => {
 
             <Box sx={{ mt: 4, display: 'flex', gap: 2, justifyContent: 'space-between' }}>
               <Button 
-                variant="outlined" 
+                variant="contained" 
                 startIcon={<ArrowBack />}
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/user-selection')}
               >
-                Back to Patient Info
+                Back
               </Button>
               <Button
                 variant="contained"

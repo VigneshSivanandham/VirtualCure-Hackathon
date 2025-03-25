@@ -1,6 +1,8 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import { useNavigate, useLocation } from 'react-router-dom';
+import vcLogo from "assets/images/logo_bg_removed.png";
+import MKBox from "components/MKBox";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -11,48 +13,51 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{backgroundColor: "#2196f3"}}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Virtual Cure
+          <MKBox
+            component="img"
+            src={vcLogo}
+            alt={"name"}
+            maxWidth="14rem"
+            borderRadius={"0.75rem"}
+            onClick={() => navigate("/home")}
+          />
         </Typography>
         <Box sx={{ display: 'flex', gap: 2 }}>
           <Button
             color="inherit"
-            onClick={() => navigate('/')}
+            // onClick={() => navigate('/')}
             sx={{ 
-              backgroundColor: isActive('/') ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
-              '&:hover': { backgroundColor: 'rgba(255, 255, 255, 0.2)' }
+              backgroundColor: isActive('/user-selection') ? 'rgb(14 102 172)' : 'transparent'
             }}
           >
             User
           </Button>
           <Button
             color="inherit"
-            onClick={() => navigate('/diagnosis')}
+            // onClick={() => navigate('/diagnosis')}
             sx={{ 
-              backgroundColor: isActive('/diagnosis') ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
-              '&:hover': { backgroundColor: 'rgba(255, 255, 255, 0.2)' }
+              backgroundColor: isActive('/diagnosis') ? 'rgb(14 102 172)' : 'transparent'
             }}
           >
             Diagnosis
           </Button>
           <Button
             color="inherit"
-            onClick={() => navigate('/drug-simulation')}
+            // onClick={() => navigate('/drug-simulation')}
             sx={{ 
-              backgroundColor: isActive('/drug-simulation') ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
-              '&:hover': { backgroundColor: 'rgba(255, 255, 255, 0.2)' }
+              backgroundColor: isActive('/drug-simulation') ? 'rgb(14 102 172)' : 'transparent'
             }}
           >
             Drug Simulation
           </Button>
           <Button
             color="inherit"
-            onClick={() => navigate('/summary')}
+            // onClick={() => navigate('/summary')}
             sx={{ 
-              backgroundColor: isActive('/summary') ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
-              '&:hover': { backgroundColor: 'rgba(255, 255, 255, 0.2)' }
+              backgroundColor: isActive('/summary') ? 'rgb(14 102 172)' : 'transparent'
             }}
           >
             Summary

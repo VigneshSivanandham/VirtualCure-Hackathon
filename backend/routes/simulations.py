@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from app.models.models import SimulationRequest, SimulationResult
-from app.services import simulation_service
+from models.models import SimulationRequest, SimulationResult
+from services import simulation_service
 
 router = APIRouter(prefix="/simulate", tags=["Simulation"])
 

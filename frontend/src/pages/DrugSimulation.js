@@ -5,7 +5,6 @@ import {
   Paper,
   Typography,
   Box,
-  TextField,
   Button,
   CircularProgress,
   Alert,
@@ -16,35 +15,45 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  MenuItem,
+  Select,
+  FormControl,
+  InputLabel,
+  TextField,
 } from '@mui/material';
-import {
-  CheckCircle,
-  Warning,
-  TrendingUp,
-  Science,
-  LocalHospital,
-} from '@mui/icons-material';
+import { CheckCircle, Warning, TrendingUp, Science, LocalHospital } from '@mui/icons-material';
 import axios from 'axios';
 
 const DrugSimulation = () => {
   const navigate = useNavigate();
   const [userData, setUserData] = useState(null);
+  const [drugData, setDrugData] = useState([]); // Store drug data from JSON
   const [formData, setFormData] = useState({
     drugName: '',
     dosage: '',
     frequency: '',
+    duration: '',
   });
+  const [selectedDrug, setSelectedDrug] = useState(null); // Store selected drug details
   const [simulation, setSimulation] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  console.log("___1")
+
   useEffect(() => {
     const storedData = localStorage.getItem('userData');
-    if (!storedData) {
-      navigate('/');
-      return;
-    }
+    // if (!storedData) {
+    //   navigate('/');
+    //   return;
+    // }
     setUserData(JSON.parse(storedData));
+
+    // Load drug data from external JSON file
+    fetch('/drug_data.json')
+      .then((response) => response.json())
+      .then((data) => setDrugData(data))
+      .catch((err) => console.error('Error loading drug data:', err));
   }, [navigate]);
 
   const handleChange = (e) => {
@@ -53,6 +62,12 @@ const DrugSimulation = () => {
       ...prev,
       [name]: value,
     }));
+
+    // Update selected drug details dynamically
+    if (name === 'drugName') {
+      const drug = drugData.find((d) => d.name === value);
+      setSelectedDrug(drug || null);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -60,14 +75,28 @@ const DrugSimulation = () => {
     try {
       setLoading(true);
       setError(null);
+
+      if (!selectedDrug) {
+        setError('Please select a valid drug.');
+        setLoading(false);
+        return;
+      }
+
       const response = await axios.post('http://localhost:8000/drug-simulation', {
         patient_id: userData?.id || 1,
         drug_name: formData.drugName,
         dosage: parseFloat(formData.dosage),
         frequency: formData.frequency,
+        duration: formData.duration,
       });
-      setSimulation(response.data);
-      // Store simulation data for summary page
+
+      // Inject dynamic simulation data
+      setSimulation({
+        effectiveness: selectedDrug.effectiveness,
+        side_effects: selectedDrug.sideEffects,
+        recommendations: selectedDrug.recommendations,
+      });
+
       localStorage.setItem('simulationData', JSON.stringify(response.data));
     } catch (err) {
       setError('Failed to simulate drug interaction. Please try again.');
@@ -163,77 +192,54 @@ const DrugSimulation = () => {
           Drug Simulation
         </Typography>
 
-        {error && (
-          <Alert severity="error" sx={{ mb: 3 }}>
-            {error}
-          </Alert>
-        )}
+        {error && <Alert severity="error" sx={{ mb: 3 }}>{error}</Alert>}
 
         <Box component="form" onSubmit={handleSubmit}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
-              <TextField
-                required
-                fullWidth
-                label="Drug Name"
-                name="drugName"
-                value={formData.drugName}
-                onChange={handleChange}
-              />
+              <FormControl fullWidth required>
+                <InputLabel>Drug Name</InputLabel>
+                <Select name="drugName" value={formData.drugName} onChange={handleChange} style={{ padding: "13px"}}>
+                  {drugData.map((drug, index) => (
+                    <MenuItem key={index} value={drug.name}>
+                      {drug.name}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField
-                required
-                fullWidth
-                label="Dosage (mg)"
-                name="dosage"
-                type="number"
-                value={formData.dosage}
-                onChange={handleChange}
-              />
+              <FormControl fullWidth required>
+                <InputLabel>Dosage (mg)</InputLabel>
+                <Select name="dosage" value={formData.dosage} onChange={handleChange}>
+                  {[...Array(13)].map((_, i) => (
+                    <MenuItem key={i} value={50 + i * 50}>
+                      {50 + i * 50} mg
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <TextField
-                required
-                fullWidth
-                label="Frequency (e.g., twice daily)"
-                name="frequency"
-                value={formData.frequency}
-                onChange={handleChange}
-              />
+            <Grid item xs={6}>
+              <TextField required fullWidth label="Times per day" name="frequency" value={formData.frequency} onChange={handleChange} />
+            </Grid>
+            <Grid item xs={6}>
+              <TextField required fullWidth label="Duration (days)" name="duration" type="number" value={formData.duration} onChange={handleChange} />
             </Grid>
           </Grid>
 
-          <Box sx={{ mt: 3, display: 'flex', justifyContent: 'space-between' }}>
-            <Button variant="outlined" onClick={() => navigate('/diagnosis')}>
-              Back to Diagnosis
-            </Button>
-            <Button
-              type="submit"
-              variant="contained"
-              disabled={loading || !formData.drugName || !formData.dosage || !formData.frequency}
-            >
-              {loading ? (
-                <CircularProgress size={24} sx={{ mr: 1 }} />
-              ) : (
-                'Simulate Drug Interaction'
-              )}
-            </Button>
-          </Box>
+          <Button type="submit" variant="contained" sx={{ mt: 3, mr: 1 }} disabled={loading}>
+            {loading ? <CircularProgress size={24} sx={{ mr: 1 }} /> : 'Simulate Drug Interaction'}
+          </Button>
+          <Button type="submit" variant="contained" sx={{ mt: 3 }} disabled={loading} onClick={() => navigate("/summary")}>
+            {loading ? <CircularProgress size={24} sx={{ mr: 1 }} /> : 'Summary'}
+          </Button>
         </Box>
 
         {renderSimulationResults()}
-
-        {simulation && (
-          <Box sx={{ mt: 4, display: 'flex', justifyContent: 'flex-end' }}>
-            <Button variant="contained" onClick={() => navigate('/summary')}>
-              View Complete Summary
-            </Button>
-          </Box>
-        )}
       </Paper>
     </Container>
   );
 };
 
-export default DrugSimulation; 
+export default DrugSimulation;

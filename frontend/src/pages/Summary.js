@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -73,20 +75,14 @@ const Summary = () => {
                 <List dense>
                   <ListItem>
                     <ListItemText
-                      primary="Name"
-                      secondary={data.user.name}
                     />
                   </ListItem>
                   <ListItem>
                     <ListItemText
-                      primary="Age"
-                      secondary={`${data.user.age} years`}
                     />
                   </ListItem>
                   <ListItem>
                     <ListItemText
-                      primary="Gender"
-                      secondary={data.user.gender}
                     />
                   </ListItem>
                 </List>
@@ -203,17 +199,8 @@ const Summary = () => {
         </Grid>
 
         <Box sx={{ mt: 4, display: 'flex', justifyContent: 'space-between' }}>
-          <Button variant="outlined" onClick={() => navigate('/drug-simulation')}>
-            Back to Drug Simulation
-          </Button>
-          <Button
-            variant="contained"
-            onClick={() => {
-              localStorage.clear();
-              navigate('/');
-            }}
-          >
-            Start New Session
+          <Button variant="contained" onClick={() => {localStorage.clear(); navigate('/user-selection')}}>
+            Re-diagnoise
           </Button>
         </Box>
       </Paper>
@@ -221,4 +208,5 @@ const Summary = () => {
   );
 };
 
+export { Summary };
 export default Summary; 

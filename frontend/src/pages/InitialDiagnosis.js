@@ -24,6 +24,7 @@ const InitialDiagnosis = () => {
   const [diagnosis, setDiagnosis] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const userType = sessionStorage.getItem("usertype");
 
   useEffect(() => {
     const storedData = localStorage.getItem('userData');
@@ -184,13 +185,13 @@ const InitialDiagnosis = () => {
               >
                 Back
               </Button>
-              <Button
+              {userType !== "Patient" ? <Button
                 variant="contained"
                 endIcon={<ArrowForward />}
                 onClick={() => navigate('/drug-simulation')}
               >
                 Proceed to Drug Simulation
-              </Button>
+              </Button> : ""}
             </Box>
           </Box>
         )}

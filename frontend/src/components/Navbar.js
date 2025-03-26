@@ -7,6 +7,7 @@ import MKBox from "components/MKBox";
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const userType = sessionStorage.getItem("usertype");
 
   const isActive = (path) => {
     return location.pathname === path;
@@ -26,6 +27,15 @@ const Navbar = () => {
           />
         </Typography>
         <Box sx={{ display: 'flex', gap: 2 }}>
+        <Button
+            color="inherit"
+            onClick={() => navigate('/home')}
+            sx={{ 
+              backgroundColor: 'transparent'
+            }}
+          >
+            Home
+          </Button>
           <Button
             color="inherit"
             // onClick={() => navigate('/')}
@@ -44,7 +54,7 @@ const Navbar = () => {
           >
             Diagnosis
           </Button>
-          <Button
+          {userType !== "Patient" ? <Button
             color="inherit"
             // onClick={() => navigate('/drug-simulation')}
             sx={{ 
@@ -52,8 +62,8 @@ const Navbar = () => {
             }}
           >
             Drug Simulation
-          </Button>
-          <Button
+          </Button> : ""}
+          {userType !== "Patient" ? <Button
             color="inherit"
             // onClick={() => navigate('/summary')}
             sx={{ 
@@ -61,6 +71,15 @@ const Navbar = () => {
             }}
           >
             Summary
+          </Button> : ""}
+          <Button
+            color="inherit"
+            onClick={() => navigate('/')}
+            sx={{ 
+              backgroundColor: 'trasparent'
+            }}
+          >
+            Logout
           </Button>
         </Box>
       </Toolbar>

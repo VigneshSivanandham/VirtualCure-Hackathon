@@ -15,7 +15,7 @@ Coded by www.creative-tim.com
 */
 
 // react-router components
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
@@ -28,8 +28,10 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 import vcLogo from "assets/images/logo.png";
+import { Button } from "@mui/material";
 
 function DefaultNavbar({ image, transparent, light, sticky, relative }) {
+  const navigate = useNavigate();
   return (
     <Container sx={sticky ? { position: "", top: 0, zIndex: 10 } : null}>
       <MKBox
@@ -45,7 +47,7 @@ function DefaultNavbar({ image, transparent, light, sticky, relative }) {
         width={"auto"}
       >
         <MKBox display="flex" justifyContent="space-between" alignItems="center">
-          <MKBox component={Link} to="/" lineHeight={1}>
+          <MKBox component={Link} to="/home" lineHeight={1}>
             <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
               {window.innerWidth > 600 ? (
                 <MKBox
@@ -59,6 +61,7 @@ function DefaultNavbar({ image, transparent, light, sticky, relative }) {
                 ""
               )}
             </MKTypography>
+            
           </MKBox>
         </MKBox>
         <MKBox
@@ -68,6 +71,18 @@ function DefaultNavbar({ image, transparent, light, sticky, relative }) {
           px={transparent ? 2 : 0}
         ></MKBox>
       </MKBox>
+        <Button
+          color="inherit"
+          onClick={() => navigate('/')}
+          sx={{ 
+            backgroundColor: 'trasparent',
+            position: 'absolute',
+            right: 0,
+            top: '3rem'
+          }}
+        >
+          Logout
+        </Button>
     </Container>
   );
 }

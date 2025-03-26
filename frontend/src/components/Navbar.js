@@ -49,33 +49,41 @@ const Navbar = () => {
           >
             Diagnosis
           </Button>
-          {userType !== "Patient" ? <Button
-            color="inherit"
-            // onClick={() => navigate('/drug-simulation')}
-            sx={{
-              backgroundColor: isActive("/drug-simulation")
-                ? "rgb(14 102 172)"
-                : "transparent",
-            }}
-          >
-            Drug Simulation
-          </Button> : ""}
-          {userType !== "Patient" ? <Button
-            color="inherit"
-            // onClick={() => navigate('/summary')}
-            sx={{
-              backgroundColor: isActive("/summary")
-                ? "rgb(14 102 172)"
-                : "transparent",
-            }}
-          >
-            Summary
-          </Button> : ""}
+          {userType !== "Patient" ? (
+            <Button
+              color="inherit"
+              // onClick={() => navigate('/drug-simulation')}
+              sx={{
+                backgroundColor: isActive("/drug-simulation")
+                  ? "rgb(14 102 172)"
+                  : "transparent",
+              }}
+            >
+              Drug Simulation
+            </Button>
+          ) : (
+            ""
+          )}
+          {userType !== "Patient" ? (
+            <Button
+              color="inherit"
+              // onClick={() => navigate('/summary')}
+              sx={{
+                backgroundColor: isActive("/summary")
+                  ? "rgb(14 102 172)"
+                  : "transparent",
+              }}
+            >
+              Summary
+            </Button>
+          ) : (
+            ""
+          )}
           <Button
             color="inherit"
-            onClick={() => navigate('/')}
-            sx={{ 
-              backgroundColor: 'trasparent'
+            onClick={() => navigate("/")}
+            sx={{
+              backgroundColor: "trasparent",
             }}
           >
             Logout

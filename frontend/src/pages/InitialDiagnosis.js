@@ -195,13 +195,17 @@ const InitialDiagnosis = () => {
               >
                 Back
               </Button>
-              {userType !== "Patient" ? <Button
-                variant="contained"
-                endIcon={<ArrowForward />}
-                onClick={() => navigate("/drug-simulation")}
-              >
-                Proceed to Drug Simulation
-              </Button> : ""}
+              {userType !== "Patient" ? (
+                <Button
+                  variant="contained"
+                  endIcon={<ArrowForward />}
+                  onClick={() => navigate("/drug-simulation")}
+                >
+                  Proceed to Drug Simulation
+                </Button>
+              ) : (
+                ""
+              )}
             </Box>
           </Box>
         )}

@@ -69,7 +69,6 @@ function DefaultNavbar({ image, transparent, light, sticky, relative }) {
                 ""
               )}
             </MKTypography>
-            
           </MKBox>
         </MKBox>
         <MKBox
@@ -79,18 +78,18 @@ function DefaultNavbar({ image, transparent, light, sticky, relative }) {
           px={transparent ? 2 : 0}
         ></MKBox>
       </MKBox>
-        <Button
-          color="inherit"
-          onClick={() => navigate('/')}
-          sx={{ 
-            backgroundColor: 'trasparent',
-            position: 'absolute',
-            right: 0,
-            top: '3rem'
-          }}
-        >
-          Logout
-        </Button>
+      <Button
+        color="inherit"
+        onClick={() => navigate("/")}
+        sx={{
+          backgroundColor: "trasparent",
+          position: "absolute",
+          right: 0,
+          top: "3rem",
+        }}
+      >
+        Logout
+      </Button>
     </Container>
   );
 }

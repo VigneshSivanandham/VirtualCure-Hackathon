@@ -63,9 +63,13 @@ const Summary = () => {
           Virtual Cure Summary Report
         </Typography>
 
-        <Grid container spacing={2} style={{ display: "grid", gridTemplateColumns: '1fr 1fr'}}>
+        <Grid
+          container
+          spacing={2}
+          style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
+        >
           {/* Patient Information */}
-          <Grid item xs={12} md={4} style={{ maxWidth: '100%'}}>
+          <Grid item xs={12} md={4} style={{ maxWidth: "100%" }}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="primary" gutterBottom>
@@ -148,7 +152,7 @@ const Summary = () => {
           </Grid>
 
           {/* Diagnosis Results */}
-          <Grid item xs={12} md={4} style={{ maxWidth: '100%'}}>
+          <Grid item xs={12} md={4} style={{ maxWidth: "100%" }}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="primary" gutterBottom>

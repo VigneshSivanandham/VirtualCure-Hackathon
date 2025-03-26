@@ -37,7 +37,7 @@ function Information() {
           transition={{ duration: 0.6 }}
         >
           <Typography variant="h3" gutterBottom>
-            Experience the Future of Healthcare 🚀
+            Experience the Future of Healthcare
           </Typography>
           <Typography variant="subtitle1" sx={{ mb: 4 }}>
             AI-Powered Personalized Healthcare & Predictive Medicine.
@@ -133,7 +133,7 @@ function Information() {
             size="large"
             sx={{ borderRadius: "20px", px: 4 }}
           >
-            Get Started 🚀
+            Get Started
           </Button>
         </motion.div>
       </Container>

@@ -26,7 +26,7 @@
     "react-countup": "6.4.2",
     "react-flatpickr": "3.10.13",
     "react-syntax-highlighter": "15.5.0",
-    "framer-motion": "^10.0.0"  // <-- Added this line
+    "framer-motion": "^10.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

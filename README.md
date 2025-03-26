@@ -138,7 +138,7 @@ The frontend will run on http://localhost:3000
    - Access recommendations
 
 
-A report of the above is available in the virtual cure2 file as a pdf.
+A report of the above is available in the [Report](VirtualCure2.pdf) file as a pdf.
 ## API Endpoints
 
 - `GET /`: Welcome message

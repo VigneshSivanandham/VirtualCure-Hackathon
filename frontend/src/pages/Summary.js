@@ -31,6 +31,7 @@ import {
 const Summary = () => {
   const navigate = useNavigate();
   const root = document.getElementById("root");
+  const userName = sessionStorage.getItem("username");
 
   const [data, setData] = useState({
     user: null,
@@ -93,17 +94,9 @@ const Summary = () => {
                   <Person sx={{ mr: 1, verticalAlign: "middle" }} />
                   Patient Information
                 </Typography>
-                <List dense>
-                  <ListItem>
-                    <ListItemText />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText />
-                  </ListItem>
-                  <ListItem>
-                    <ListItemText />
-                  </ListItem>
-                </List>
+                <Typography variant="subtitle2" sx={{mt: 2}}>
+                  UserName: {userName || ""}
+                </Typography>
                 <Typography variant="subtitle2" sx={{ mt: 2 }}>
                   Reported Symptoms:
                 </Typography>

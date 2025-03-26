@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
+import CircularProgress from "@mui/material/CircularProgress";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKInput from "components/MKInput";
@@ -14,6 +14,7 @@ import vcLogo from "assets/images/logo.png";
 
 function SignInBasic() {
   const [userName, setUserName] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const onUserNameChange = (event) => {
@@ -25,8 +26,12 @@ function SignInBasic() {
   };
 
   const submitSignIn = () => {
+    setLoading(true);
     sessionStorage.setItem("username", userName);
-    navigate("/home");
+    setTimeout(() => {
+      navigate("/home");
+      setLoading(false);
+    }, 1000);
   };
 
   return (
@@ -71,7 +76,13 @@ function SignInBasic() {
           height="100%"
         >
           <Grid item xs={11} sm={9} md={5} lg={4} xl={3}>
-            <Card>
+            <Card
+              sx={{
+                p: 3,
+                borderRadius: "20px",
+                boxShadow: "0px 10px 30px rgba(0,0,0,0.1)",
+              }}
+            >
               {/* Logo Section */}
               <MKBox
                 variant="gradient"
@@ -88,7 +99,6 @@ function SignInBasic() {
                   alt="vclogo"
                   width="100%"
                   opacity={0.7}
-                  style={{ marginTop: "0px", marginBottom: "-9.5px" }}
                 />
               </MKBox>
 
@@ -114,7 +124,22 @@ function SignInBasic() {
                       fullWidth
                       onClick={submitSignIn}
                     >
-                      Sign In
+                      {loading ? (
+                        <CircularProgress size={24} color="inherit" />
+                      ) : (
+                        "Sign In"
+                      )}
+                    </MKButton>
+                  </MKBox>
+
+                  <MKBox mt={1} mb={1}>
+                    <MKButton
+                      variant="outlined"
+                      color="white"
+                      fullWidth
+                      onClick={() => navigate("/home")}
+                    >
+                      Explore as Guest
                     </MKButton>
                   </MKBox>
                 </MKBox>

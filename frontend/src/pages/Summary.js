@@ -31,7 +31,7 @@ import {
 const Summary = () => {
   const navigate = useNavigate();
   const root = document.getElementById("root");
-  const userName = sessionStorage.getItem("username");
+  const userDetails = JSON.parse(localStorage.getItem("userData"));
 
   const [data, setData] = useState({
     user: null,
@@ -94,8 +94,10 @@ const Summary = () => {
                   <Person sx={{ mr: 1, verticalAlign: "middle" }} />
                   Patient Information
                 </Typography>
-                <Typography variant="subtitle2" sx={{mt: 2}}>
-                  UserName: {userName || ""}
+                <Typography variant="subtitle2" sx={{mt: 1}}>
+                  Name: <b>{userDetails?.name || ""}</b> <br/>
+                  Age: <b>{userDetails?.age || ""}</b> <br/>
+                  Gender: <b>{userDetails?.gender || ""}</b> <br/> 
                 </Typography>
                 <Typography variant="subtitle2" sx={{ mt: 2 }}>
                   Reported Symptoms:

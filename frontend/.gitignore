@@ -1,29 +1,33 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Dependencies
 node_modules/
+.pnp/
+.pnp.js
 
-# testing
-/coverage
+# Testing
+coverage/
 
-# production
-/build
+# Production build
+build/
 
-# misc
+# Miscellaneous
 .DS_Store
+
+# Environment variables
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log* 
+yarn-error.log*
 
+# Lock files (ensure consistency if using only one package manager)
 package-lock.json
 yarn.lock
 
+# Custom scripts
 commit.sh
 
 # See https://help.github.com/ignore-files/ for more about ignoring files.

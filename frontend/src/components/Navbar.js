@@ -1,6 +1,6 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React from "react";
+import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import { useNavigate, useLocation } from "react-router-dom";
 import vcLogo from "assets/images/logo_bg_removed.png";
 import MKBox from "components/MKBox";
 
@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" style={{backgroundColor: "#2196f3"}}>
+    <AppBar position="static" style={{ backgroundColor: "#2196f3" }}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <MKBox
@@ -26,21 +26,14 @@ const Navbar = () => {
             onClick={() => navigate("/home")}
           />
         </Typography>
-        <Box sx={{ display: 'flex', gap: 2 }}>
-        <Button
-            color="inherit"
-            onClick={() => navigate('/home')}
-            sx={{ 
-              backgroundColor: 'transparent'
-            }}
-          >
-            Home
-          </Button>
+        <Box sx={{ display: "flex", gap: 2 }}>
           <Button
             color="inherit"
             // onClick={() => navigate('/')}
-            sx={{ 
-              backgroundColor: isActive('/user-selection') ? 'rgb(14 102 172)' : 'transparent'
+            sx={{
+              backgroundColor: isActive("/user-selection")
+                ? "rgb(14 102 172)"
+                : "transparent",
             }}
           >
             User
@@ -48,8 +41,10 @@ const Navbar = () => {
           <Button
             color="inherit"
             // onClick={() => navigate('/diagnosis')}
-            sx={{ 
-              backgroundColor: isActive('/diagnosis') ? 'rgb(14 102 172)' : 'transparent'
+            sx={{
+              backgroundColor: isActive("/diagnosis")
+                ? "rgb(14 102 172)"
+                : "transparent",
             }}
           >
             Diagnosis
@@ -57,8 +52,10 @@ const Navbar = () => {
           {userType !== "Patient" ? <Button
             color="inherit"
             // onClick={() => navigate('/drug-simulation')}
-            sx={{ 
-              backgroundColor: isActive('/drug-simulation') ? 'rgb(14 102 172)' : 'transparent'
+            sx={{
+              backgroundColor: isActive("/drug-simulation")
+                ? "rgb(14 102 172)"
+                : "transparent",
             }}
           >
             Drug Simulation
@@ -66,8 +63,10 @@ const Navbar = () => {
           {userType !== "Patient" ? <Button
             color="inherit"
             // onClick={() => navigate('/summary')}
-            sx={{ 
-              backgroundColor: isActive('/summary') ? 'rgb(14 102 172)' : 'transparent'
+            sx={{
+              backgroundColor: isActive("/summary")
+                ? "rgb(14 102 172)"
+                : "transparent",
             }}
           >
             Summary
@@ -87,4 +86,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

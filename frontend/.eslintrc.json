@@ -40,7 +40,7 @@
         "rule-name": "off"
       }
     },
-      {
+    {
       "files": ["**/*.js", "**/*.jsx"],
       "rules": {
         "no-unused-vars": "off",

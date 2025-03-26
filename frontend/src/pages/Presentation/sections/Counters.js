@@ -38,14 +38,20 @@ function Counters() {
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
+            <Divider
+              orientation="vertical"
+              sx={{ display: { xs: "none", md: "block" }, mx: 0 }}
+            />
             <DefaultCounterCard
               count={100}
               suffix="+"
               title="Doctor's Medicine Suggestions"
               description="Doctor's can able to ask VirtualCure AI to get the medicine list with less or without side effect, based on the patient health condition."
             />
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
+            <Divider
+              orientation="vertical"
+              sx={{ display: { xs: "none", md: "block" }, ml: 0 }}
+            />
           </Grid>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard

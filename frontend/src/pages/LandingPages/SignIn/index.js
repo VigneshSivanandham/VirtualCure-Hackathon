@@ -1,27 +1,27 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
+import MKDropdown from "components/MKDropdown";
 import SimpleFooter from "examples/Footers/SimpleFooter";
 import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 import vcLogo from "assets/images/logo.png";
-import { useNavigate } from "react-router";
-import MKDropdown from "components/MKDropdown";
 
 function SignInBasic() {
-  const [userName, setUserName] = useState();
+  const [userName, setUserName] = useState("");
   const navigate = useNavigate();
 
   const onUserNameChange = (event) => {
     setUserName(event?.target?.value);
   };
 
-  const onUserTypeChange = (type) => {
-    sessionStorage.setItem("usertype", type);
+  const onUserTypeChange = (event) => {
+    sessionStorage.setItem("usertype", event?.target?.value);
   };
 
   const submitSignIn = () => {
@@ -31,6 +31,7 @@ function SignInBasic() {
 
   return (
     <>
+      {/* Background Overlay */}
       <MKBox
         position="absolute"
         top={0}
@@ -39,7 +40,10 @@ function SignInBasic() {
         width="100%"
         minHeight="100vh"
         sx={{
-          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+          backgroundImage: ({
+            functions: { linearGradient, rgba },
+            palette: { gradients },
+          }) =>
             `${linearGradient(
               rgba(gradients.dark.main, 0.6),
               rgba(gradients.dark.state, 0.6)
@@ -49,10 +53,26 @@ function SignInBasic() {
           backgroundRepeat: "no-repeat",
         }}
       />
-      <MKBox px={1} width="100%" height="100vh" mx="auto" position="relative" zIndex={2}>
-        <Grid container spacing={1} justifyContent="center" alignItems="center" height="100%">
+
+      {/* Sign-In Container */}
+      <MKBox
+        px={1}
+        width="100%"
+        height="100vh"
+        mx="auto"
+        position="relative"
+        zIndex={2}
+      >
+        <Grid
+          container
+          spacing={1}
+          justifyContent="center"
+          alignItems="center"
+          height="100%"
+        >
           <Grid item xs={11} sm={9} md={5} lg={4} xl={3}>
             <Card>
+              {/* Logo Section */}
               <MKBox
                 variant="gradient"
                 bgColor="info"
@@ -71,19 +91,34 @@ function SignInBasic() {
                   style={{ marginTop: "0px", marginBottom: "-9.5px" }}
                 />
               </MKBox>
+
+              {/* Form Section */}
               <MKBox pt={4} pb={3} px={3}>
                 <MKBox component="form" role="form">
                   <MKBox mb={2}>
-                    <MKInput type="text" label="Username" fullWidth onChange={onUserNameChange} />
+                    <MKInput
+                      type="text"
+                      label="Username"
+                      fullWidth
+                      onChange={onUserNameChange}
+                    />
                   </MKBox>
                   <MKBox mb={2}>
                     <MKDropdown onChange={onUserTypeChange} required />
                   </MKBox>
+
                   <MKBox mt={4} mb={1}>
-                    <MKButton variant="gradient" color="info" fullWidth onClick={submitSignIn}>
-                      sign in
+                    <MKButton
+                      variant="gradient"
+                      color="info"
+                      fullWidth
+                      onClick={submitSignIn}
+                    >
+                      Sign In
                     </MKButton>
                   </MKBox>
+
+                  {/* Sign-Up Link */}
                   <MKBox mt={3} mb={1} textAlign="center">
                     <MKTypography variant="button" color="text">
                       Don&apos;t have an account?{" "}
@@ -105,6 +140,8 @@ function SignInBasic() {
           </Grid>
         </Grid>
       </MKBox>
+
+      {/* Footer */}
       <MKBox width="100%" position="absolute" zIndex={2} bottom="1.625rem">
         <SimpleFooter light />
       </MKBox>

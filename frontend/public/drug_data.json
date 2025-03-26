@@ -1,1846 +1,1620 @@
 [
-    {
-        "name": "Antasida Doen Tablet Kunyah",
-        "effectiveness": 0.9,
-        "sideEffects": [
-            "sometimes constipation, diarrhea",
-            "Nauseous vomit",
-            "Hypophosphatemia osteomalacia (on long-term administration of large doses when phosphate levels are low)",
-            "Dialysis dementia in long-term administration in dialysis patients"
-        ],
-        "recommendations": [
-            "Best given on an empty stomach",
-            "Give 1-2 hours after eating before bed",
-            "Chew the tablet well before swallowing"
-        ]
-    },
-    {
-        "name": "Dexanta Tablet Kunyah",
-        "effectiveness": 0.89,
-        "sideEffects": [
-            "Constipation",
-            "diarrhea",
-            "nauseous",
-            "vomit",
-            "Symptoms will disappear when use of the drug is stopped"
-        ],
-        "recommendations": [
-            "Given between meals",
-            "Chew the tablet well before swallowing"
-        ]
-    },
-    {
-        "name": "Esemag Cair",
-        "effectiveness": 0.75,
-        "sideEffects": [],
-        "recommendations": [
-            "before or after eating"
-        ]
-    },
-    {
-        "name": "Gastrucid Cair",
-        "effectiveness": 0.87,
-        "sideEffects": [
-            "A common side effect is constipation",
-            "diarrhea",
-            "nauseous",
-            "vomit",
-            "These symptoms will disappear if use of the drug is stopped"
-        ],
-        "recommendations": [
-            "Drink 1 hour before eating or 2 hours after eating before bed."
-        ]
-    },
-    {
-        "name": "Gastrucid Tablet Kunyah",
-        "effectiveness": 0.79,
-        "sideEffects": [
-            "A common side effect is constipation",
-            "diarrhea",
-            "nauseous",
-            "vomit",
-            "These symptoms will disappear if use of the drug is stopped."
-        ],
-        "recommendations": [
-            "1 hour after eating before going to bed at night, chew the tablet well before swallowing"
-        ]
-    },
-    {
-        "name": "Mylanta Cair",
-        "effectiveness": 0.86,
-        "sideEffects": [
-            "A common side effect is constipation",
-            "diarrhea",
-            "nauseous",
-            "vomit",
-            "burning sensation in the mouth or throat",
-            "dysgeusia or altered taste perception",
-            "hypersensitivity reactions including rash",
-            "urticaria",
-            "angioedema. These symptoms will disappear if use of the drug is stopped"
-        ],
-        "recommendations": [
-            "Consumed 1 hour before eating or 2 hours after eating before bed"
-        ]
-    },
-    {
-        "name": "Mylanta Tablet Kunyah",
-        "effectiveness": 0.82,
-        "sideEffects": [
-            "A common side effect is constipation",
-            "diarrhea",
-            "nauseous",
-            "vomit",
-            "burning sensation in the mouth or throat",
-            "dysgeusia or altered taste perception",
-            "hypersensitivity reactions including rash",
-            "urticaria",
-            "angioedema. These symptoms will disappear if use of the drug is stopped"
-        ],
-        "recommendations": [
-            "Drink 1 hour before eating or 2 hours after eating before bed, it is best to chew it first"
-        ]
-    },
-    {
-        "name": "New Enzyplex Tablet",
-        "effectiveness": 0.89,
-        "sideEffects": [
-            "The most common side effect is stomach discomfort",
-            "Constipation Dermatitis",
-            "Another rare gastrointestinal reaction is diarrhea",
-            "Heartburn",
-            "Nausea and Vomiting",
-            "Hypersensitivity reactions may occur"
-        ],
-        "recommendations": [
-            "At mealtimes, after meals or as recommended by your doctor"
-        ]
-    },
-    {
-        "name": "Plantacid Forte Cair",
-        "effectiveness": 0.94,
-        "sideEffects": [
-            "Nauseous",
-            "vomit",
-            "constipation",
-            "diarrhea. The symptoms will disappear if the use of the drug is stopped."
-        ],
-        "recommendations": [
-            "Given 1 hour after eating and before bedtime"
-        ]
-    },
-    {
-        "name": "Plantacid Forte Tablet Kunyah",
-        "effectiveness": 0.89,
-        "sideEffects": [
-            "Nauseous",
-            "vomit",
-            "constipation",
-            "diarrhea. The symptoms will disappear if the use of the drug is stopped."
-        ],
-        "recommendations": [
-            "Given 1 hour after eating and before bedtime"
-        ]
-    },
-    {
-        "name": "Polycrol Forte",
-        "effectiveness": 0.86,
-        "sideEffects": [
-            "A common side effect is constipation",
-            "diarrhea",
-            "nauseous",
-            "vomit",
-            "and these symptoms will disappear if use of the drug is stopped"
-        ],
-        "recommendations": [
-            "Drink 1 hour after eating and before bedtime"
-        ]
-    },
-    {
-        "name": "Polysilane Cair",
-        "effectiveness": 0.89,
-        "sideEffects": [
-            "Constipation",
-            "diarrhea",
-            "nauseous",
-            "vomiting and these symptoms will disappear if the use of the drug is stopped"
-        ],
-        "recommendations": [
-            "Consumed 1-2 hours after eating and before bed"
-        ]
-    },
-    {
-        "name": "polysilane Tablet",
-        "effectiveness": 0.92,
-        "sideEffects": [
-            "Constipation",
-            "diarrhea",
-            "nauseous",
-            "vomit",
-            "phosphate depletion"
-        ],
-        "recommendations": [
-            "Give before meals, chew on an empty stomach"
-        ]
-    },
-    {
-        "name": "Promag Cair 60 ml",
-        "effectiveness": 0.79,
-        "sideEffects": [
-            "Generally it is constipation",
-            "diarrhea",
-            "nauseous",
-            "vomit",
-            "and these symptoms will disappear if use of the drug is stopped"
-        ],
-        "recommendations": [
-            "Shake well before drinking",
-            "It is recommended to take this medicine immediately when symptoms appear and it is recommended 1-2 hours before or after eating and before going to bed"
-        ]
-    },
-    {
-        "name": "Promag Sachet Herbal",
-        "effectiveness": 0.87,
-        "sideEffects": [
-            "The use of drugs generally has certain side effects and is appropriate for each individual",
-            "If excessive and dangerous side effects occur, please consult medical personnel"
-        ],
-        "recommendations": [
-            "Can be drunk directly or mixed with warm water, shake before drinking"
-        ]
-    },
-    {
-        "name": "Promag Sachet Suspensi",
-        "effectiveness": 0.84,
-        "sideEffects": [
-            "Not always, but there are several side effects that may occur after consuming Promag, such as diarrhea, constipation, nausea and vomiting",
-            "The symptoms above will usually disappear when you stop taking the drug"
-        ],
-        "recommendations": [
-            "One hour before or after eating, and before going to bed at night"
-        ]
-    },
-    {
-        "name": "Promag Tablet Kunyah",
-        "effectiveness": 0.88,
-        "sideEffects": [
-            "constipation",
-            "diarrhea",
-            "nauseous",
-            "vomit"
-        ],
-        "recommendations": [
-            "It is recommended to take this medication immediately when symptoms appear and continue 1-2 hours before eating or after eating and before going to bed. This medicine can be taken with water or chewed directly"
-        ]
-    },
-    {
-        "name": "Bisolvon Extra",
-        "effectiveness": 0.81,
-        "sideEffects": [
-            "Mild GL disorders. Allergic reactions, especially skin rashes",
-            "Increased transaminase levels, headaches and vertigo"
-        ],
-        "recommendations": [
-            "Consumed after eating."
-        ]
-    },
-    {
-        "name": "Cohistan",
-        "effectiveness": 0.91,
-        "sideEffects": [
-            "Dry mouth",
-            "sleepy",
-            "blurred vision",
-            "nauseous"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Decadryl",
-        "effectiveness": 0.81,
-        "sideEffects": [
-            "sleepy",
-            "urinary retention",
-            "dry mouth",
-            "indigestion",
-            "allergic skin reactions",
-            "sedation",
-            "Dizzy"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Fluimucil Dry Syrup",
-        "effectiveness": 0.95,
-        "sideEffects": [
-            "Bronchospasm",
-            "gastric disorders",
-            "stomatitis",
-            "rhinorrhea",
-            "headache",
-            "tinnitus",
-            "urticaria",
-            "shivering",
-            "fever",
-            "hemoptitis",
-            "anaphylactic reaction (rare)"
-        ],
-        "recommendations": [
-            "Add water until the red line marks. Close the bottle tightly then shake the bottle upside down",
-            "After shaking, the surface of the syrup will be visible below the mark",
-            "Add more water up to the mark. Beat until homogeneous",
-            "After mixing, the syrup is used for a maximum of 12 days"
-        ]
-    },
-    {
-        "name": "herbaKOF",
-        "effectiveness": 0.91,
-        "sideEffects": [
-            "No side effects have been reported yet"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Ikadryl",
-        "effectiveness": 0.83,
-        "sideEffects": [
-            "Gl disorders",
-            "anorexia or increased appetite",
-            "blurred vision",
-            "urinary disorders",
-            "dry mouth",
-            "chest feels tight",
-            "hypotension",
-            "muscle weakness",
-            "tinnitus",
-            "headache",
-            "epileptic attacks",
-            "photosensitive"
-        ],
-        "recommendations": [
-            "Can be consumed before or after eating"
-        ]
-    },
-    {
-        "name": "Laserin",
-        "effectiveness": 0.84,
-        "sideEffects": [
-            "There is no safety data for this drug"
-        ],
-        "recommendations": [
-            "Give after eating"
-        ]
-    },
-    {
-        "name": "OB Herbal",
-        "effectiveness": 0.89,
-        "sideEffects": [
-            "In general, side effects are rarely found when using herbal medicines"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Obat Batuk Cap Ibu dan Anak",
-        "effectiveness": 0.79,
-        "sideEffects": [
-            "Nauseous",
-            "Diarrhea",
-            "Stomach ache",
-            "Itchy rash",
-            "Rash",
-            "Swelling of the skin",
-            "Headache",
-            "Dizzy",
-            "Difficulty sleeping or insomnia"
-        ],
-        "recommendations": [
-            "After eating. Drink slowly or mix with warm water"
-        ]
-    },
-    {
-        "name": "OBH Berlico Jerus Nipis",
-        "effectiveness": 0.81,
-        "sideEffects": [
-            "The side effect that occurs at large doses is metabolic acidosis",
-            "sleepiness",
-            "nausea and vomiting"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    },
-    {
-        "name": "OBH Combi Batuk Berdahak",
-        "effectiveness": 0.75,
-        "sideEffects": [
-            "Nauseous",
-            "vomit",
-            "feeling of discomfort in the stomach. In large doses it can cause electrolyte disturbances in the body"
-        ],
-        "recommendations": [
-            "Given after eating"
-        ]
-    },
-    {
-        "name": "OBH IKA Obat Batuk Hitam",
-        "effectiveness": 0.81,
-        "sideEffects": [
-            "Sleepy"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "OBH Itrasal",
-        "effectiveness": 0.86,
-        "sideEffects": [
-            "Excessive doses may cause acidosis"
-        ],
-        "recommendations": [
-            "Consumed after eating"
-        ]
-    },
-    {
-        "name": "OBH Nellco",
-        "effectiveness": 0.88,
-        "sideEffects": [
-            "Nauseous",
-            "vomit",
-            "feeling of discomfort in the stomach",
-            "In large doses it can cause electrolyte disturbances in the body"
-        ],
-        "recommendations": [
-            "Consumed after eating. Shake well before using"
-        ]
-    },
-    {
-        "name": "Phenacold Expectorant",
-        "effectiveness": 0.83,
-        "sideEffects": [
-            "Side effects that may arise are drowsiness",
-            "Dizzy",
-            "digestive tract disorders"
-        ],
-        "recommendations": [
-            "With or without food"
-        ]
-    },
-    {
-        "name": "Sanadryl DMP",
-        "effectiveness": 0.85,
-        "sideEffects": [
-            "Sleepy",
-            "sedation",
-            "Dizzy",
-            "coordination disorders",
-            "unpleasant feeling in the pit of the stomach",
-            "thickened airway secretions",
-            "constipation",
-            "Very large doses can cause respiratory and central nervous system depression"
-        ],
-        "recommendations": [
-            "Consumed with or after food."
-        ]
-    },
-    {
-        "name": "Sanadryl Ekspektoran",
-        "effectiveness": 0.77,
-        "sideEffects": [
-            "Side effects that often occur are drowsiness",
-            "sedation",
-            "Dizzy",
-            "coordination disorders",
-            "unpleasant feeling in the pit of the stomach. thickened airway secretions"
-        ],
-        "recommendations": [
-            "Given with or without food"
-        ]
-    },
-    {
-        "name": "Siladex Antitussive",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "Nauseous",
-            "Dizzy",
-            "sleepy",
-            "constipation",
-            "dry mouth and blurred vision",
-            "Indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "palpitations",
-            "urinary retention"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    },
-    {
-        "name": "Siladex Mucolytic Expctorant",
-        "effectiveness": 0.78,
-        "sideEffects": [
-            "Nauseous",
-            "diarrhea",
-            "feeling of fullness in the stomach",
-            "vertigo",
-            "sweat more",
-            "skin rash"
-        ],
-        "recommendations": [
-            "Consumed after eating"
-        ]
-    },
-    {
-        "name": "Vicks Formula 44",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "Can cause nausea",
-            "Dizzy",
-            "sleepy",
-            "constipation",
-            "sedation",
-            "thickened airway secretions",
-            "and restless",
-            "May cause drowsiness"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Woods Peppermint Antitussive",
-        "effectiveness": 0.85,
-        "sideEffects": [
-            "side effects such as nausea",
-            "Dizzy",
-            "drowsiness and constipation"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Zenirex",
-        "effectiveness": 0.8,
-        "sideEffects": [
-            "Causes drowsiness. Sometimes vision is blurry",
-            "dry mouth",
-            "increased blood pressure",
-            "nauseous vomit",
-            "diarrhea",
-            "gastrointestinal irritation"
-        ],
-        "recommendations": [
-            "Shake it first"
-        ]
-    },
-    {
-        "name": "Decolsin Cair",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    },
-    {
-        "name": "Intunal Cair",
-        "effectiveness": 0.83,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Nellco Special",
-        "effectiveness": 0.91,
-        "sideEffects": [
-            "drowsiness",
-            "nauseous",
-            "vomit",
-            "headache",
-            "hypertension"
-        ],
-        "recommendations": [
-            "Consumed after eating. Shake well before using"
-        ]
-    },
-    {
-        "name": "OBH Combi Batuk Flu Menthol",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "Snarling",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urine netence",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "Give after eating"
-        ]
-    },
-    {
-        "name": "Paratusin PE",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "difficult to urinate",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "The medicine is taken after eating"
-        ]
-    },
-    {
-        "name": "Sanaflu + Batuk",
-        "effectiveness": 0.84,
-        "sideEffects": [
-            "GI Disorders",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "palpitations",
-            "urinary retention",
-            "sleepy",
-            "Liver damage large doses long term therapy"
-        ],
-        "recommendations": [
-            "Give with food"
-        ]
-    },
-    {
-        "name": "Decolsin Cair",
-        "effectiveness": 0.86,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    },
-    {
-        "name": "Intunal Cair",
-        "effectiveness": 0.78,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Nellco Special",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "drowsiness",
-            "nauseous",
-            "vomit",
-            "headache",
-            "hypertension"
-        ],
-        "recommendations": [
-            "Consumed after eating. Shake well before using"
-        ]
-    },
-    {
-        "name": "OBH Combi Batuk Flu Menthol",
-        "effectiveness": 0.9,
-        "sideEffects": [
-            "Snarling",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urine netence",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "Give after eating"
-        ]
-    },
-    {
-        "name": "Sanaflu + Batuk",
-        "effectiveness": 0.8,
-        "sideEffects": [
-            "GI Disorders",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "palpitations",
-            "urinary retention",
-            "sleepy",
-            "Liver damage large doses long term therapy"
-        ],
-        "recommendations": [
-            "Give with food"
-        ]
-    },
-    {
-        "name": "Actifed Plus Cough Suppressant merah",
-        "effectiveness": 0.83,
-        "sideEffects": [
-            "Sleepy",
-            "sedation",
-            "flustered",
-            "insomnia. ins dizzy",
-            "mouth",
-            "nose",
-            "or dry throat",
-            "nervous",
-            "indigestion nausea",
-            "vomit",
-            "impaired attention and coordination",
-            "hallucinations, especially in children",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "palpitations",
-            "difficult to urinate",
-            "allergic redness of the skin",
-            "sometimes accompanied by difficulty breathing",
-            "swelling of the face or throat. Serotonin syndrome is a very rare case of feeling confused",
-            "fatigue",
-            "sweating",
-            "shiver",
-            "shivering",
-            "sudden muscle contractions or increased blood pressure"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    },
-    {
-        "name": "Actifed Plus Expectorant Hijau",
-        "effectiveness": 0.77,
-        "sideEffects": [
-            "Sleepy",
-            "sedation",
-            "flustered",
-            "Dizzy",
-            "mouth",
-            "dry nose or throat",
-            "nervous",
-            "indigestion nausea",
-            "vomit",
-            "impaired attention and coordination",
-            "hallucinations, especially in children",
-            "headache",
-            "insomnia",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "palpitations",
-            "difficult to urinate",
-            "allergic redness of the skin",
-            "sometimes accompanied by difficulty breathing",
-            "swelling of the face or throat"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    },
-    {
-        "name": "Siladex Cough Cold",
-        "effectiveness": 0.75,
-        "sideEffects": [
-            "Gastrointestinal disorders",
-            "sleepy",
-            "Dizzy",
-            "blurred vision",
-            "dry mouth",
-            "chest feels tight"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Silex",
-        "effectiveness": 0.78,
-        "sideEffects": [
-            "If consumed according to the recommended usage rules and dosage, Silex Syrup 100 Ml is generally safe",
-            "However, in some people, the thyme content in Silex Syrup 100 ml can cause side effects in the form of stomach aches, headaches or dizziness."
-        ],
-        "recommendations": [
-            "Shake first before drinking. Consumed after eating"
-        ]
-    },
-    {
-        "name": "Demacolin Cair",
-        "effectiveness": 0.9,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "difficult to urinate",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    },
-    {
-        "name": "Vicks Formula 44 Anak-anak",
-        "effectiveness": 0.79,
-        "sideEffects": [
-            "At large doses, respiratory tract depression can occur",
-            "Rarely causes drowsiness, nausea or dizziness"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "OB Herbal Anak-anak",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "OB Herbal Junior Syrup generally rarely causes side effects if used according to the instructions for use"
-        ],
-        "recommendations": [
-            "Given after eating. Shake first before drinking"
-        ]
-    },
-    {
-        "name": "Laserin Madu",
-        "effectiveness": 0.84,
-        "sideEffects": [],
-        "recommendations": [
-            "give after eating"
-        ]
-    },
-    {
-        "name": "Bisolvon Kids",
-        "effectiveness": 0.92,
-        "sideEffects": [
-            "Immune sensitive reaction",
-            "Digestive system disorders",
-            "Skin disorders such as rashes",
-            "Respiratory disorders"
-        ],
-        "recommendations": [
-            "give after eating"
-        ]
-    },
-    {
-        "name": "Bisolvon Solution",
-        "effectiveness": 0.89,
-        "sideEffects": [
-            "Immune sensitive reaction",
-            "Digestive system disorders",
-            "Skin disorders such as rashes",
-            "Respiratory disorders"
-        ],
-        "recommendations": [
-            "give after eating"
-        ]
-    },
-    {
-        "name": "Termorex Plus",
-        "effectiveness": 0.89,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "difficult to urinate",
-            "Long-term and large doses can cause liver damage"
-        ],
-        "recommendations": [
-            "before or after eating"
-        ]
-    },
-    {
-        "name": "Nellco Special PE Anak-anak",
-        "effectiveness": 0.84,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "Shake first before use"
-        ]
-    },
-    {
-        "name": "OBH Combi Anak Batuk + Flu",
-        "effectiveness": 0.91,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "consumed after eating"
-        ]
-    },
-    {
-        "name": "Hufagripp Flu Batuk",
-        "effectiveness": 0.78,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "nervous",
-            "insomnia",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "dry mouth",
-            "palpitations and difficulty urinating",
-            "Long-term and excessive dose use can cause liver damage"
-        ],
-        "recommendations": [
-            "consumed after eating"
-        ]
-    },
-    {
-        "name": "Coparcetin",
-        "effectiveness": 0.82,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "nervous",
-            "insomnia",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "and difficulty urinating",
-            "Long-term and excessive dose use can cause liver damage"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Bronchitin Expectorant",
-        "effectiveness": 0.87,
-        "sideEffects": [
-            "Sleepy",
-            "heart beat",
-            "dry mouth",
-            "Nauseous",
-            "vomit",
-            "headache",
-            "itching on the skin",
-            "Long-term and large doses of paracetamol can cause liver damage"
-        ],
-        "recommendations": [
-            "After eating. Shake first before drinking"
-        ]
-    },
-    {
-        "name": "Bodrexin Flu Batuk Tidak Berdahak DPH",
-        "effectiveness": 0.84,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Bodrexin Flu Batuk PE",
-        "effectiveness": 0.79,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "vertigo",
-            "Long-term and large doses cause liver damage",
-            "Immune system disorders are rare",
-            "Anaphylactic reactions include anaphylactic shock",
-            "angioedema and pruritus",
-            "Skin and subcutaneous disorders are rare",
-            "rash",
-            "urticaria there is no data yet",
-            "serious skin reaction erythema multiforme",
-            "Stevens-Johnson syndrome toxic epidermal necrolysis and pustulosis exanthema acul"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Anakonidin OBH",
-        "effectiveness": 0.86,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth palpinas retens un digestion large doses and long term cause liver damage"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Anacetine",
-        "effectiveness": 0.94,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Triaminic Batuk dan Pilek",
-        "effectiveness": 0.91,
-        "sideEffects": [
-            "Side effects that may occur during use of Triaminic Cough and Cold include nausea",
-            "vomit",
-            "dry mouth and dizziness"
-        ],
-        "recommendations": [
-            "Consumed before or after eating"
-        ]
-    },
-    {
-        "name": "Hufagripp Batuk Pilek",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "Sleepy",
-            "headache",
-            "insomnia",
-            "excitation",
-            "tachycardia",
-            "arrhythmia",
-            "tremors",
-            "palpitations",
-            "dry mouth",
-            "sedation",
-            "urinary retention",
-            "digestive tract disorders",
-            "psychomotor disorders"
-        ],
-        "recommendations": [
-            "consumed after eating"
-        ]
-    },
-    {
-        "name": "Anakonidin",
-        "effectiveness": 0.8,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "headache",
-            "insomnia",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "difficult to urinate"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Decolgen Kids Flu",
-        "effectiveness": 0.79,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "ventricle",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "before or after eating"
-        ]
-    },
-    {
-        "name": "Triaminic Pilek",
-        "effectiveness": 0.8,
-        "sideEffects": [
-            "Chlorphenamine maleate can cause drowsiness and dry mouth",
-            "Pseudoephedrine HCl can cause a feeling of intoxication",
-            "headache",
-            "nauseous",
-            "vomit",
-            "sweating",
-            "thirsty",
-            "tachycardia",
-            "precordial pain",
-            "palpitations",
-            "difficulty urinating",
-            "muscle weakness and tremors",
-            "worry",
-            "anxiety",
-            "insomnia difficulty sleeping",
-            "hypertension",
-            "dry mouth",
-            "mydriasis, enlarged pupils and stomach problems",
-            "Ventricular arrhythmias may occur",
-            "In patients with prostate enlargement it can cause difficulty urinating"
-        ],
-        "recommendations": [
-            "before or after eating"
-        ]
-    },
-    {
-        "name": "Rhinos Junior",
-        "effectiveness": 0.89,
-        "sideEffects": [
-            "Insomnia",
-            "Headache",
-            "Shiver",
-            "Tachycardia heart rate exceeding 100 beats per minute",
-            "Arrhythmia, heart rhythm disturbance",
-            "Heart beat",
-            "Difficulty urinating"
-        ],
-        "recommendations": [
-            "can be given with or without food"
-        ]
-    },
-    {
-        "name": "Rhinos Neo",
-        "effectiveness": 0.75,
-        "sideEffects": [
-            "Insomnia",
-            "headache",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "palpitations",
-            "difficulty urinating"
-        ],
-        "recommendations": [
-            "before or after eating"
-        ]
-    },
-    {
-        "name": "Hufagripp Pilek",
-        "effectiveness": 0.91,
-        "sideEffects": [
-            "Sleepy",
-            "insomnia",
-            "excitation",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "tremors",
-            "palpitations",
-            "dry mouth",
-            "urinary retention and gastrointestinal disorders"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Bisolvon Tablet",
-        "effectiveness": 0.79,
-        "sideEffects": [
-            "Immune sensitive reaction",
-            "Digestive system disorders",
-            "Skin disorders such as rashes",
-            "Respiratory disorders"
-        ],
-        "recommendations": [
-            "Give after eating"
-        ]
-    },
-    {
-        "name": "Acetylcysteine",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "Side effects that may arise but are rare are pyrosis, nausea, vomiting, and diarrhea. In some limited cases, stomatitis, dizziness and ringing in the ears, tinnitus, occur",
-            "After using NAC, allergic reactions sometimes occur such as itching, urticaria, cutaneous eruption rash, exanthema, difficulty breathing, bronchospasm, rapid heart rate, and hypotension.",
-            "The occurrence of cases in the majority of patients with hyperreactivity in the bronchial system following bronchial asthma is called hyper responders, namely patients with increased sensitivity due to various stimuli. Then hemorrhage occurs after administering NAC, related to individual hypersensitivity reactions",
-            "Actions that must be taken if side effects occur starting from the initial hypersensitivity reaction, stop using NAC immediately, consult a doctor for further action based on the severity of the disease"
-        ],
-        "recommendations": [
-            "Consumed after eating"
-        ]
-    },
-    {
-        "name": "Guaifenesin",
-        "effectiveness": 0.95,
-        "sideEffects": [
-            "nauseous",
-            "vomit",
-            "diarrhea and lower abdominal pain",
-            "Dizzy",
-            "dizzy",
-            "headache",
-            "neprolithiasis",
-            "hypouricermia",
-            "rash on the skin"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    },
-    {
-        "name": "Alpara",
-        "effectiveness": 0.9,
-        "sideEffects": [
-            "drowsiness",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause damage to liver function"
-        ],
-        "recommendations": [
-            "Consumed after eating"
-        ]
-    },
-    {
-        "name": "Bodrex Flu Batuk PE",
-        "effectiveness": 0.93,
-        "sideEffects": [
-            "Indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations and urinary retention",
-            "Long-term and large doses can cause damage to liver function"
-        ],
-        "recommendations": [
-            "consumed after food"
-        ]
-    },
-    {
-        "name": "Panadol Cold Flu",
-        "effectiveness": 0.82,
-        "sideEffects": [
-            "Sometimes it can cause tachycardia, palpitations, dyspepsia, nausea, flushing of the skin, respiratory and central nervous system depression, drowsiness, constipation, nausea, dizziness",
-            "Gastrointestinal disorders, restlessness, excitement, tremor",
-            "May cause drowsiness and dizziness",
-            "Serotonin syndrome is very rare, feeling confused, tired, sweating, nervous, shivering, sudden muscle contractions or increased blood pressure",
-            "Hallucinations are very rare. Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "Consumed after eating"
-        ]
-    },
-    {
-        "name": "Paramex Flu Batuk PE",
-        "effectiveness": 0.81,
-        "sideEffects": [
-            "Dry mouth",
-            "indigestion",
-            "arrhythmia",
-            "palpitations",
-            "tachycardia",
-            "tremors",
-            "nervous",
-            "insomnia",
-            "urinary retention",
-            "and excitation",
-            "Long-term and large doses of Paracetamol cause liver damage"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Procold Flu Batuk",
-        "effectiveness": 0.82,
-        "sideEffects": [
-            "Indigestion",
-            "Psychomotor disorders, tachycardia, arrhythmia, palpitations",
-            "urinary retention",
-            "sleepy",
-            "Long-term and large doses cause liver damage",
-            "dry mouth",
-            "Headache",
-            "Insomnia",
-            "excitation",
-            "nervous",
-            "tremors and difficulty urinating"
-        ],
-        "recommendations": [
-            "Give after eating"
-        ]
-    },
-    {
-        "name": "Tuzalos",
-        "effectiveness": 0.75,
-        "sideEffects": [
-            "Sleepy",
-            "Dizzy",
-            "dry mouth",
-            "epilepsy-like seizures at large doses",
-            "skin rash"
-        ],
-        "recommendations": [
-            "Can be given with or without food"
-        ]
-    },
-    {
-        "name": "Bodrex Flu Batuk Berdahak PE",
-        "effectiveness": 0.89,
-        "sideEffects": [
-            "Digestion disorders",
-            "Insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations and urinary retention",
-            "Long-term and large doses cause liver damage",
-            "Immune system disorders are rare hypersensitivity reactions",
-            "there is no data on anaphylactic reactions including anaphylactic shock, angioederma and prutitus",
-            "Rare skin and subcutaneous disorders: rash, urticaria, no data on serious skin reactions, erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis and acute exanthema pustulosis"
-        ],
-        "recommendations": [
-            "Give with food"
-        ]
-    },
-    {
-        "name": "Decolsin Tablet",
-        "effectiveness": 0.9,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "Consumed before or after eating"
-        ]
-    },
-    {
-        "name": "Decolgen Tablet",
-        "effectiveness": 0.95,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "dry mouth",
-            "palpitations",
-            "psychomotor",
-            "tachycardia",
-            "arrhythmia",
-            "urinary retention"
-        ],
-        "recommendations": [
-            "Consumed after eating"
-        ]
-    },
-    {
-        "name": "Inza",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "difficult to urinate",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Mixagrip Flu",
-        "effectiveness": 0.78,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage",
-            "Insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "ventricular arrhythmias and palpitations\u0131"
-        ],
-        "recommendations": [
-            "Consumed after eating"
-        ]
-    },
-    {
-        "name": "Dicom",
-        "effectiveness": 0.81,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "headache",
-            "insomnia",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "difficult to urinate"
-        ],
-        "recommendations": [
-            "after eating"
-        ]
-    },
-    {
-        "name": "Grantusif",
-        "effectiveness": 0.94,
-        "sideEffects": [
-            "Mouth feels dry",
-            "sleepy",
-            "nauseous",
-            "Dizzy",
-            "constipation"
-        ],
-        "recommendations": [
-            "Given after eating"
-        ]
-    },
-    {
-        "name": "Konidin",
-        "effectiveness": 0.82,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "headache",
-            "insomnia",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "difficult to urinate"
-        ],
-        "recommendations": [
-            "Given after eating"
-        ]
-    },
-    {
-        "name": "Komix",
-        "effectiveness": 0.8,
-        "sideEffects": [
-            "Sleepy",
-            "digestive disorders",
-            "dry mouth",
-            "urinary retention"
-        ],
-        "recommendations": [
-            "Given after eating"
-        ]
-    },
-    {
-        "name": "Komix Herbal Tube",
-        "effectiveness": 0.77,
-        "sideEffects": [
-            "There have been no reported side effects"
-        ],
-        "recommendations": [
-            "After eating. Shake first before drinking"
-        ]
-    },
-    {
-        "name": "Komix Herbal Kids Tube",
-        "effectiveness": 0.94,
-        "sideEffects": [
-            "There have been no reported side effects"
-        ],
-        "recommendations": [
-            "After eating. Shake first before drinking"
-        ]
-    },
-    {
-        "name": "Komix Herbal Sachet",
-        "effectiveness": 0.85,
-        "sideEffects": [
-            "There have been no reported side effects"
-        ],
-        "recommendations": [
-            "After eating. Shake first before drinking"
-        ]
-    },
-    {
-        "name": "Flucadex Tablet",
-        "effectiveness": 0.92,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses can cause liver damage"
-        ],
-        "recommendations": [
-            "Give with food"
-        ]
-    },
-    {
-        "name": "Intunal-F Tablet",
-        "effectiveness": 0.79,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Stop Cold",
-        "effectiveness": 0.88,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "ventricular arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "difficult to urinate",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    },
-    {
-        "name": "Tera - F",
-        "effectiveness": 0.82,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "palpitations",
-            "urinary retention",
-            "dry mouth",
-            "Long-term and large doses cause damage to liver function"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Paratusin Tablet",
-        "effectiveness": 0.76,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause liver damage"
-        ],
-        "recommendations": [
-            "The medicine is taken after eating"
-        ]
-    },
-    {
-        "name": "Komix OBH",
-        "effectiveness": 0.85,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "headache",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention"
-        ],
-        "recommendations": [
-            "Given after eating"
-        ]
-    },
-    {
-        "name": "Komix OBH Kids",
-        "effectiveness": 0.9,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "headache",
-            "insomnia",
-            "nervous",
-            "excitation",
-            "tremors",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Molexflu",
-        "effectiveness": 0.81,
-        "sideEffects": [
-            "This drug can cause indigestion drowsiness",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention",
-            "Long-term and large doses cause damage to liver function"
-        ],
-        "recommendations": [
-            "Consumed before or after eating"
-        ]
-    },
-    {
-        "name": "Neozep Forte",
-        "effectiveness": 0.82,
-        "sideEffects": [
-            "Long-term and large doses of Paracetamol can cause liver damage",
-            "Sleepy",
-            "glaucoma",
-            "heart beat",
-            "nauseous",
-            "vomit",
-            "dry mouth",
-            "difficult to urinate",
-            "visual and psychomotor disorders",
-            "difficult to breathe",
-            "worried",
-            "hypertension",
-            "May increase intraocular pressure in children"
-        ],
-        "recommendations": [
-            "The medicine is taken after eating"
-        ]
-    },
-    {
-        "name": "Procold Flu",
-        "effectiveness": 0.75,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "urinary retention",
-            "Long-term and large doses cause liver damage",
-            "Insomnia",
-            "nervous",
-            "excitation",
-            "tremors and ventricular arrhythmias"
-        ],
-        "recommendations": [
-            "Consumed before or after eating"
-        ]
-    },
-    {
-        "name": "Sanaflu",
-        "effectiveness": 0.84,
-        "sideEffects": [
-            "Side effects that may occur when consuming Sanaflu are:",
-            "In the long term, paracetamol use can damage the liver",
-            "Increases blood pressure"
-        ],
-        "recommendations": [
-            "Give with food"
-        ]
-    },
-    {
-        "name": "Ultraflu",
-        "effectiveness": 0.77,
-        "sideEffects": [
-            "Large doses or long-term therapy may cause liver damage"
-        ],
-        "recommendations": [
-            "After eating"
-        ]
-    },
-    {
-        "name": "Nalgestan",
-        "effectiveness": 0.87,
-        "sideEffects": [
-            "Sleepy",
-            "indigestion",
-            "psychomotor disorders",
-            "tachycardia",
-            "arrhythmia",
-            "dry mouth",
-            "palpitations",
-            "urinary retention"
-        ],
-        "recommendations": [
-            "Before or after eating"
-        ]
-    }
+  {
+    "name": "Antasida Doen Tablet Kunyah",
+    "effectiveness": 0.9,
+    "sideEffects": [
+      "sometimes constipation, diarrhea",
+      "Nauseous vomit",
+      "Hypophosphatemia osteomalacia (on long-term administration of large doses when phosphate levels are low)",
+      "Dialysis dementia in long-term administration in dialysis patients"
+    ],
+    "recommendations": [
+      "Best given on an empty stomach",
+      "Give 1-2 hours after eating before bed",
+      "Chew the tablet well before swallowing"
+    ]
+  },
+  {
+    "name": "Dexanta Tablet Kunyah",
+    "effectiveness": 0.89,
+    "sideEffects": [
+      "Constipation",
+      "diarrhea",
+      "nauseous",
+      "vomit",
+      "Symptoms will disappear when use of the drug is stopped"
+    ],
+    "recommendations": [
+      "Given between meals",
+      "Chew the tablet well before swallowing"
+    ]
+  },
+  {
+    "name": "Esemag Cair",
+    "effectiveness": 0.75,
+    "sideEffects": [],
+    "recommendations": ["before or after eating"]
+  },
+  {
+    "name": "Gastrucid Cair",
+    "effectiveness": 0.87,
+    "sideEffects": [
+      "A common side effect is constipation",
+      "diarrhea",
+      "nauseous",
+      "vomit",
+      "These symptoms will disappear if use of the drug is stopped"
+    ],
+    "recommendations": [
+      "Drink 1 hour before eating or 2 hours after eating before bed."
+    ]
+  },
+  {
+    "name": "Gastrucid Tablet Kunyah",
+    "effectiveness": 0.79,
+    "sideEffects": [
+      "A common side effect is constipation",
+      "diarrhea",
+      "nauseous",
+      "vomit",
+      "These symptoms will disappear if use of the drug is stopped."
+    ],
+    "recommendations": [
+      "1 hour after eating before going to bed at night, chew the tablet well before swallowing"
+    ]
+  },
+  {
+    "name": "Mylanta Cair",
+    "effectiveness": 0.86,
+    "sideEffects": [
+      "A common side effect is constipation",
+      "diarrhea",
+      "nauseous",
+      "vomit",
+      "burning sensation in the mouth or throat",
+      "dysgeusia or altered taste perception",
+      "hypersensitivity reactions including rash",
+      "urticaria",
+      "angioedema. These symptoms will disappear if use of the drug is stopped"
+    ],
+    "recommendations": [
+      "Consumed 1 hour before eating or 2 hours after eating before bed"
+    ]
+  },
+  {
+    "name": "Mylanta Tablet Kunyah",
+    "effectiveness": 0.82,
+    "sideEffects": [
+      "A common side effect is constipation",
+      "diarrhea",
+      "nauseous",
+      "vomit",
+      "burning sensation in the mouth or throat",
+      "dysgeusia or altered taste perception",
+      "hypersensitivity reactions including rash",
+      "urticaria",
+      "angioedema. These symptoms will disappear if use of the drug is stopped"
+    ],
+    "recommendations": [
+      "Drink 1 hour before eating or 2 hours after eating before bed, it is best to chew it first"
+    ]
+  },
+  {
+    "name": "New Enzyplex Tablet",
+    "effectiveness": 0.89,
+    "sideEffects": [
+      "The most common side effect is stomach discomfort",
+      "Constipation Dermatitis",
+      "Another rare gastrointestinal reaction is diarrhea",
+      "Heartburn",
+      "Nausea and Vomiting",
+      "Hypersensitivity reactions may occur"
+    ],
+    "recommendations": [
+      "At mealtimes, after meals or as recommended by your doctor"
+    ]
+  },
+  {
+    "name": "Plantacid Forte Cair",
+    "effectiveness": 0.94,
+    "sideEffects": [
+      "Nauseous",
+      "vomit",
+      "constipation",
+      "diarrhea. The symptoms will disappear if the use of the drug is stopped."
+    ],
+    "recommendations": ["Given 1 hour after eating and before bedtime"]
+  },
+  {
+    "name": "Plantacid Forte Tablet Kunyah",
+    "effectiveness": 0.89,
+    "sideEffects": [
+      "Nauseous",
+      "vomit",
+      "constipation",
+      "diarrhea. The symptoms will disappear if the use of the drug is stopped."
+    ],
+    "recommendations": ["Given 1 hour after eating and before bedtime"]
+  },
+  {
+    "name": "Polycrol Forte",
+    "effectiveness": 0.86,
+    "sideEffects": [
+      "A common side effect is constipation",
+      "diarrhea",
+      "nauseous",
+      "vomit",
+      "and these symptoms will disappear if use of the drug is stopped"
+    ],
+    "recommendations": ["Drink 1 hour after eating and before bedtime"]
+  },
+  {
+    "name": "Polysilane Cair",
+    "effectiveness": 0.89,
+    "sideEffects": [
+      "Constipation",
+      "diarrhea",
+      "nauseous",
+      "vomiting and these symptoms will disappear if the use of the drug is stopped"
+    ],
+    "recommendations": ["Consumed 1-2 hours after eating and before bed"]
+  },
+  {
+    "name": "polysilane Tablet",
+    "effectiveness": 0.92,
+    "sideEffects": [
+      "Constipation",
+      "diarrhea",
+      "nauseous",
+      "vomit",
+      "phosphate depletion"
+    ],
+    "recommendations": ["Give before meals, chew on an empty stomach"]
+  },
+  {
+    "name": "Promag Cair 60 ml",
+    "effectiveness": 0.79,
+    "sideEffects": [
+      "Generally it is constipation",
+      "diarrhea",
+      "nauseous",
+      "vomit",
+      "and these symptoms will disappear if use of the drug is stopped"
+    ],
+    "recommendations": [
+      "Shake well before drinking",
+      "It is recommended to take this medicine immediately when symptoms appear and it is recommended 1-2 hours before or after eating and before going to bed"
+    ]
+  },
+  {
+    "name": "Promag Sachet Herbal",
+    "effectiveness": 0.87,
+    "sideEffects": [
+      "The use of drugs generally has certain side effects and is appropriate for each individual",
+      "If excessive and dangerous side effects occur, please consult medical personnel"
+    ],
+    "recommendations": [
+      "Can be drunk directly or mixed with warm water, shake before drinking"
+    ]
+  },
+  {
+    "name": "Promag Sachet Suspensi",
+    "effectiveness": 0.84,
+    "sideEffects": [
+      "Not always, but there are several side effects that may occur after consuming Promag, such as diarrhea, constipation, nausea and vomiting",
+      "The symptoms above will usually disappear when you stop taking the drug"
+    ],
+    "recommendations": [
+      "One hour before or after eating, and before going to bed at night"
+    ]
+  },
+  {
+    "name": "Promag Tablet Kunyah",
+    "effectiveness": 0.88,
+    "sideEffects": ["constipation", "diarrhea", "nauseous", "vomit"],
+    "recommendations": [
+      "It is recommended to take this medication immediately when symptoms appear and continue 1-2 hours before eating or after eating and before going to bed. This medicine can be taken with water or chewed directly"
+    ]
+  },
+  {
+    "name": "Bisolvon Extra",
+    "effectiveness": 0.81,
+    "sideEffects": [
+      "Mild GL disorders. Allergic reactions, especially skin rashes",
+      "Increased transaminase levels, headaches and vertigo"
+    ],
+    "recommendations": ["Consumed after eating."]
+  },
+  {
+    "name": "Cohistan",
+    "effectiveness": 0.91,
+    "sideEffects": ["Dry mouth", "sleepy", "blurred vision", "nauseous"],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Decadryl",
+    "effectiveness": 0.81,
+    "sideEffects": [
+      "sleepy",
+      "urinary retention",
+      "dry mouth",
+      "indigestion",
+      "allergic skin reactions",
+      "sedation",
+      "Dizzy"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Fluimucil Dry Syrup",
+    "effectiveness": 0.95,
+    "sideEffects": [
+      "Bronchospasm",
+      "gastric disorders",
+      "stomatitis",
+      "rhinorrhea",
+      "headache",
+      "tinnitus",
+      "urticaria",
+      "shivering",
+      "fever",
+      "hemoptitis",
+      "anaphylactic reaction (rare)"
+    ],
+    "recommendations": [
+      "Add water until the red line marks. Close the bottle tightly then shake the bottle upside down",
+      "After shaking, the surface of the syrup will be visible below the mark",
+      "Add more water up to the mark. Beat until homogeneous",
+      "After mixing, the syrup is used for a maximum of 12 days"
+    ]
+  },
+  {
+    "name": "herbaKOF",
+    "effectiveness": 0.91,
+    "sideEffects": ["No side effects have been reported yet"],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Ikadryl",
+    "effectiveness": 0.83,
+    "sideEffects": [
+      "Gl disorders",
+      "anorexia or increased appetite",
+      "blurred vision",
+      "urinary disorders",
+      "dry mouth",
+      "chest feels tight",
+      "hypotension",
+      "muscle weakness",
+      "tinnitus",
+      "headache",
+      "epileptic attacks",
+      "photosensitive"
+    ],
+    "recommendations": ["Can be consumed before or after eating"]
+  },
+  {
+    "name": "Laserin",
+    "effectiveness": 0.84,
+    "sideEffects": ["There is no safety data for this drug"],
+    "recommendations": ["Give after eating"]
+  },
+  {
+    "name": "OB Herbal",
+    "effectiveness": 0.89,
+    "sideEffects": [
+      "In general, side effects are rarely found when using herbal medicines"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Obat Batuk Cap Ibu dan Anak",
+    "effectiveness": 0.79,
+    "sideEffects": [
+      "Nauseous",
+      "Diarrhea",
+      "Stomach ache",
+      "Itchy rash",
+      "Rash",
+      "Swelling of the skin",
+      "Headache",
+      "Dizzy",
+      "Difficulty sleeping or insomnia"
+    ],
+    "recommendations": ["After eating. Drink slowly or mix with warm water"]
+  },
+  {
+    "name": "OBH Berlico Jerus Nipis",
+    "effectiveness": 0.81,
+    "sideEffects": [
+      "The side effect that occurs at large doses is metabolic acidosis",
+      "sleepiness",
+      "nausea and vomiting"
+    ],
+    "recommendations": ["Before or after eating"]
+  },
+  {
+    "name": "OBH Combi Batuk Berdahak",
+    "effectiveness": 0.75,
+    "sideEffects": [
+      "Nauseous",
+      "vomit",
+      "feeling of discomfort in the stomach. In large doses it can cause electrolyte disturbances in the body"
+    ],
+    "recommendations": ["Given after eating"]
+  },
+  {
+    "name": "OBH IKA Obat Batuk Hitam",
+    "effectiveness": 0.81,
+    "sideEffects": ["Sleepy"],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "OBH Itrasal",
+    "effectiveness": 0.86,
+    "sideEffects": ["Excessive doses may cause acidosis"],
+    "recommendations": ["Consumed after eating"]
+  },
+  {
+    "name": "OBH Nellco",
+    "effectiveness": 0.88,
+    "sideEffects": [
+      "Nauseous",
+      "vomit",
+      "feeling of discomfort in the stomach",
+      "In large doses it can cause electrolyte disturbances in the body"
+    ],
+    "recommendations": ["Consumed after eating. Shake well before using"]
+  },
+  {
+    "name": "Phenacold Expectorant",
+    "effectiveness": 0.83,
+    "sideEffects": [
+      "Side effects that may arise are drowsiness",
+      "Dizzy",
+      "digestive tract disorders"
+    ],
+    "recommendations": ["With or without food"]
+  },
+  {
+    "name": "Sanadryl DMP",
+    "effectiveness": 0.85,
+    "sideEffects": [
+      "Sleepy",
+      "sedation",
+      "Dizzy",
+      "coordination disorders",
+      "unpleasant feeling in the pit of the stomach",
+      "thickened airway secretions",
+      "constipation",
+      "Very large doses can cause respiratory and central nervous system depression"
+    ],
+    "recommendations": ["Consumed with or after food."]
+  },
+  {
+    "name": "Sanadryl Ekspektoran",
+    "effectiveness": 0.77,
+    "sideEffects": [
+      "Side effects that often occur are drowsiness",
+      "sedation",
+      "Dizzy",
+      "coordination disorders",
+      "unpleasant feeling in the pit of the stomach. thickened airway secretions"
+    ],
+    "recommendations": ["Given with or without food"]
+  },
+  {
+    "name": "Siladex Antitussive",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "Nauseous",
+      "Dizzy",
+      "sleepy",
+      "constipation",
+      "dry mouth and blurred vision",
+      "Indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "palpitations",
+      "urinary retention"
+    ],
+    "recommendations": ["Before or after eating"]
+  },
+  {
+    "name": "Siladex Mucolytic Expctorant",
+    "effectiveness": 0.78,
+    "sideEffects": [
+      "Nauseous",
+      "diarrhea",
+      "feeling of fullness in the stomach",
+      "vertigo",
+      "sweat more",
+      "skin rash"
+    ],
+    "recommendations": ["Consumed after eating"]
+  },
+  {
+    "name": "Vicks Formula 44",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "Can cause nausea",
+      "Dizzy",
+      "sleepy",
+      "constipation",
+      "sedation",
+      "thickened airway secretions",
+      "and restless",
+      "May cause drowsiness"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Woods Peppermint Antitussive",
+    "effectiveness": 0.85,
+    "sideEffects": [
+      "side effects such as nausea",
+      "Dizzy",
+      "drowsiness and constipation"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Zenirex",
+    "effectiveness": 0.8,
+    "sideEffects": [
+      "Causes drowsiness. Sometimes vision is blurry",
+      "dry mouth",
+      "increased blood pressure",
+      "nauseous vomit",
+      "diarrhea",
+      "gastrointestinal irritation"
+    ],
+    "recommendations": ["Shake it first"]
+  },
+  {
+    "name": "Decolsin Cair",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["Before or after eating"]
+  },
+  {
+    "name": "Intunal Cair",
+    "effectiveness": 0.83,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Nellco Special",
+    "effectiveness": 0.91,
+    "sideEffects": [
+      "drowsiness",
+      "nauseous",
+      "vomit",
+      "headache",
+      "hypertension"
+    ],
+    "recommendations": ["Consumed after eating. Shake well before using"]
+  },
+  {
+    "name": "OBH Combi Batuk Flu Menthol",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "Snarling",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urine netence",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["Give after eating"]
+  },
+  {
+    "name": "Paratusin PE",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "difficult to urinate",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["The medicine is taken after eating"]
+  },
+  {
+    "name": "Sanaflu + Batuk",
+    "effectiveness": 0.84,
+    "sideEffects": [
+      "GI Disorders",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "palpitations",
+      "urinary retention",
+      "sleepy",
+      "Liver damage large doses long term therapy"
+    ],
+    "recommendations": ["Give with food"]
+  },
+  {
+    "name": "Decolsin Cair",
+    "effectiveness": 0.86,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["Before or after eating"]
+  },
+  {
+    "name": "Intunal Cair",
+    "effectiveness": 0.78,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Nellco Special",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "drowsiness",
+      "nauseous",
+      "vomit",
+      "headache",
+      "hypertension"
+    ],
+    "recommendations": ["Consumed after eating. Shake well before using"]
+  },
+  {
+    "name": "OBH Combi Batuk Flu Menthol",
+    "effectiveness": 0.9,
+    "sideEffects": [
+      "Snarling",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urine netence",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["Give after eating"]
+  },
+  {
+    "name": "Sanaflu + Batuk",
+    "effectiveness": 0.8,
+    "sideEffects": [
+      "GI Disorders",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "palpitations",
+      "urinary retention",
+      "sleepy",
+      "Liver damage large doses long term therapy"
+    ],
+    "recommendations": ["Give with food"]
+  },
+  {
+    "name": "Actifed Plus Cough Suppressant merah",
+    "effectiveness": 0.83,
+    "sideEffects": [
+      "Sleepy",
+      "sedation",
+      "flustered",
+      "insomnia. ins dizzy",
+      "mouth",
+      "nose",
+      "or dry throat",
+      "nervous",
+      "indigestion nausea",
+      "vomit",
+      "impaired attention and coordination",
+      "hallucinations, especially in children",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "palpitations",
+      "difficult to urinate",
+      "allergic redness of the skin",
+      "sometimes accompanied by difficulty breathing",
+      "swelling of the face or throat. Serotonin syndrome is a very rare case of feeling confused",
+      "fatigue",
+      "sweating",
+      "shiver",
+      "shivering",
+      "sudden muscle contractions or increased blood pressure"
+    ],
+    "recommendations": ["Before or after eating"]
+  },
+  {
+    "name": "Actifed Plus Expectorant Hijau",
+    "effectiveness": 0.77,
+    "sideEffects": [
+      "Sleepy",
+      "sedation",
+      "flustered",
+      "Dizzy",
+      "mouth",
+      "dry nose or throat",
+      "nervous",
+      "indigestion nausea",
+      "vomit",
+      "impaired attention and coordination",
+      "hallucinations, especially in children",
+      "headache",
+      "insomnia",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "palpitations",
+      "difficult to urinate",
+      "allergic redness of the skin",
+      "sometimes accompanied by difficulty breathing",
+      "swelling of the face or throat"
+    ],
+    "recommendations": ["Before or after eating"]
+  },
+  {
+    "name": "Siladex Cough Cold",
+    "effectiveness": 0.75,
+    "sideEffects": [
+      "Gastrointestinal disorders",
+      "sleepy",
+      "Dizzy",
+      "blurred vision",
+      "dry mouth",
+      "chest feels tight"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Silex",
+    "effectiveness": 0.78,
+    "sideEffects": [
+      "If consumed according to the recommended usage rules and dosage, Silex Syrup 100 Ml is generally safe",
+      "However, in some people, the thyme content in Silex Syrup 100 ml can cause side effects in the form of stomach aches, headaches or dizziness."
+    ],
+    "recommendations": ["Shake first before drinking. Consumed after eating"]
+  },
+  {
+    "name": "Demacolin Cair",
+    "effectiveness": 0.9,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "difficult to urinate",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["Before or after eating"]
+  },
+  {
+    "name": "Vicks Formula 44 Anak-anak",
+    "effectiveness": 0.79,
+    "sideEffects": [
+      "At large doses, respiratory tract depression can occur",
+      "Rarely causes drowsiness, nausea or dizziness"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "OB Herbal Anak-anak",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "OB Herbal Junior Syrup generally rarely causes side effects if used according to the instructions for use"
+    ],
+    "recommendations": ["Given after eating. Shake first before drinking"]
+  },
+  {
+    "name": "Laserin Madu",
+    "effectiveness": 0.84,
+    "sideEffects": [],
+    "recommendations": ["give after eating"]
+  },
+  {
+    "name": "Bisolvon Kids",
+    "effectiveness": 0.92,
+    "sideEffects": [
+      "Immune sensitive reaction",
+      "Digestive system disorders",
+      "Skin disorders such as rashes",
+      "Respiratory disorders"
+    ],
+    "recommendations": ["give after eating"]
+  },
+  {
+    "name": "Bisolvon Solution",
+    "effectiveness": 0.89,
+    "sideEffects": [
+      "Immune sensitive reaction",
+      "Digestive system disorders",
+      "Skin disorders such as rashes",
+      "Respiratory disorders"
+    ],
+    "recommendations": ["give after eating"]
+  },
+  {
+    "name": "Termorex Plus",
+    "effectiveness": 0.89,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "difficult to urinate",
+      "Long-term and large doses can cause liver damage"
+    ],
+    "recommendations": ["before or after eating"]
+  },
+  {
+    "name": "Nellco Special PE Anak-anak",
+    "effectiveness": 0.84,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["Shake first before use"]
+  },
+  {
+    "name": "OBH Combi Anak Batuk + Flu",
+    "effectiveness": 0.91,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["consumed after eating"]
+  },
+  {
+    "name": "Hufagripp Flu Batuk",
+    "effectiveness": 0.78,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "nervous",
+      "insomnia",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "dry mouth",
+      "palpitations and difficulty urinating",
+      "Long-term and excessive dose use can cause liver damage"
+    ],
+    "recommendations": ["consumed after eating"]
+  },
+  {
+    "name": "Coparcetin",
+    "effectiveness": 0.82,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "nervous",
+      "insomnia",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "and difficulty urinating",
+      "Long-term and excessive dose use can cause liver damage"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Bronchitin Expectorant",
+    "effectiveness": 0.87,
+    "sideEffects": [
+      "Sleepy",
+      "heart beat",
+      "dry mouth",
+      "Nauseous",
+      "vomit",
+      "headache",
+      "itching on the skin",
+      "Long-term and large doses of paracetamol can cause liver damage"
+    ],
+    "recommendations": ["After eating. Shake first before drinking"]
+  },
+  {
+    "name": "Bodrexin Flu Batuk Tidak Berdahak DPH",
+    "effectiveness": 0.84,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Bodrexin Flu Batuk PE",
+    "effectiveness": 0.79,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "vertigo",
+      "Long-term and large doses cause liver damage",
+      "Immune system disorders are rare",
+      "Anaphylactic reactions include anaphylactic shock",
+      "angioedema and pruritus",
+      "Skin and subcutaneous disorders are rare",
+      "rash",
+      "urticaria there is no data yet",
+      "serious skin reaction erythema multiforme",
+      "Stevens-Johnson syndrome toxic epidermal necrolysis and pustulosis exanthema acul"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Anakonidin OBH",
+    "effectiveness": 0.86,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth palpinas retens un digestion large doses and long term cause liver damage"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Anacetine",
+    "effectiveness": 0.94,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Triaminic Batuk dan Pilek",
+    "effectiveness": 0.91,
+    "sideEffects": [
+      "Side effects that may occur during use of Triaminic Cough and Cold include nausea",
+      "vomit",
+      "dry mouth and dizziness"
+    ],
+    "recommendations": ["Consumed before or after eating"]
+  },
+  {
+    "name": "Hufagripp Batuk Pilek",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "Sleepy",
+      "headache",
+      "insomnia",
+      "excitation",
+      "tachycardia",
+      "arrhythmia",
+      "tremors",
+      "palpitations",
+      "dry mouth",
+      "sedation",
+      "urinary retention",
+      "digestive tract disorders",
+      "psychomotor disorders"
+    ],
+    "recommendations": ["consumed after eating"]
+  },
+  {
+    "name": "Anakonidin",
+    "effectiveness": 0.8,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "headache",
+      "insomnia",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "difficult to urinate"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Decolgen Kids Flu",
+    "effectiveness": 0.79,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "ventricle",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["before or after eating"]
+  },
+  {
+    "name": "Triaminic Pilek",
+    "effectiveness": 0.8,
+    "sideEffects": [
+      "Chlorphenamine maleate can cause drowsiness and dry mouth",
+      "Pseudoephedrine HCl can cause a feeling of intoxication",
+      "headache",
+      "nauseous",
+      "vomit",
+      "sweating",
+      "thirsty",
+      "tachycardia",
+      "precordial pain",
+      "palpitations",
+      "difficulty urinating",
+      "muscle weakness and tremors",
+      "worry",
+      "anxiety",
+      "insomnia difficulty sleeping",
+      "hypertension",
+      "dry mouth",
+      "mydriasis, enlarged pupils and stomach problems",
+      "Ventricular arrhythmias may occur",
+      "In patients with prostate enlargement it can cause difficulty urinating"
+    ],
+    "recommendations": ["before or after eating"]
+  },
+  {
+    "name": "Rhinos Junior",
+    "effectiveness": 0.89,
+    "sideEffects": [
+      "Insomnia",
+      "Headache",
+      "Shiver",
+      "Tachycardia heart rate exceeding 100 beats per minute",
+      "Arrhythmia, heart rhythm disturbance",
+      "Heart beat",
+      "Difficulty urinating"
+    ],
+    "recommendations": ["can be given with or without food"]
+  },
+  {
+    "name": "Rhinos Neo",
+    "effectiveness": 0.75,
+    "sideEffects": [
+      "Insomnia",
+      "headache",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "palpitations",
+      "difficulty urinating"
+    ],
+    "recommendations": ["before or after eating"]
+  },
+  {
+    "name": "Hufagripp Pilek",
+    "effectiveness": 0.91,
+    "sideEffects": [
+      "Sleepy",
+      "insomnia",
+      "excitation",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "tremors",
+      "palpitations",
+      "dry mouth",
+      "urinary retention and gastrointestinal disorders"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Bisolvon Tablet",
+    "effectiveness": 0.79,
+    "sideEffects": [
+      "Immune sensitive reaction",
+      "Digestive system disorders",
+      "Skin disorders such as rashes",
+      "Respiratory disorders"
+    ],
+    "recommendations": ["Give after eating"]
+  },
+  {
+    "name": "Acetylcysteine",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "Side effects that may arise but are rare are pyrosis, nausea, vomiting, and diarrhea. In some limited cases, stomatitis, dizziness and ringing in the ears, tinnitus, occur",
+      "After using NAC, allergic reactions sometimes occur such as itching, urticaria, cutaneous eruption rash, exanthema, difficulty breathing, bronchospasm, rapid heart rate, and hypotension.",
+      "The occurrence of cases in the majority of patients with hyperreactivity in the bronchial system following bronchial asthma is called hyper responders, namely patients with increased sensitivity due to various stimuli. Then hemorrhage occurs after administering NAC, related to individual hypersensitivity reactions",
+      "Actions that must be taken if side effects occur starting from the initial hypersensitivity reaction, stop using NAC immediately, consult a doctor for further action based on the severity of the disease"
+    ],
+    "recommendations": ["Consumed after eating"]
+  },
+  {
+    "name": "Guaifenesin",
+    "effectiveness": 0.95,
+    "sideEffects": [
+      "nauseous",
+      "vomit",
+      "diarrhea and lower abdominal pain",
+      "Dizzy",
+      "dizzy",
+      "headache",
+      "neprolithiasis",
+      "hypouricermia",
+      "rash on the skin"
+    ],
+    "recommendations": ["Before or after eating"]
+  },
+  {
+    "name": "Alpara",
+    "effectiveness": 0.9,
+    "sideEffects": [
+      "drowsiness",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause damage to liver function"
+    ],
+    "recommendations": ["Consumed after eating"]
+  },
+  {
+    "name": "Bodrex Flu Batuk PE",
+    "effectiveness": 0.93,
+    "sideEffects": [
+      "Indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations and urinary retention",
+      "Long-term and large doses can cause damage to liver function"
+    ],
+    "recommendations": ["consumed after food"]
+  },
+  {
+    "name": "Panadol Cold Flu",
+    "effectiveness": 0.82,
+    "sideEffects": [
+      "Sometimes it can cause tachycardia, palpitations, dyspepsia, nausea, flushing of the skin, respiratory and central nervous system depression, drowsiness, constipation, nausea, dizziness",
+      "Gastrointestinal disorders, restlessness, excitement, tremor",
+      "May cause drowsiness and dizziness",
+      "Serotonin syndrome is very rare, feeling confused, tired, sweating, nervous, shivering, sudden muscle contractions or increased blood pressure",
+      "Hallucinations are very rare. Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["Consumed after eating"]
+  },
+  {
+    "name": "Paramex Flu Batuk PE",
+    "effectiveness": 0.81,
+    "sideEffects": [
+      "Dry mouth",
+      "indigestion",
+      "arrhythmia",
+      "palpitations",
+      "tachycardia",
+      "tremors",
+      "nervous",
+      "insomnia",
+      "urinary retention",
+      "and excitation",
+      "Long-term and large doses of Paracetamol cause liver damage"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Procold Flu Batuk",
+    "effectiveness": 0.82,
+    "sideEffects": [
+      "Indigestion",
+      "Psychomotor disorders, tachycardia, arrhythmia, palpitations",
+      "urinary retention",
+      "sleepy",
+      "Long-term and large doses cause liver damage",
+      "dry mouth",
+      "Headache",
+      "Insomnia",
+      "excitation",
+      "nervous",
+      "tremors and difficulty urinating"
+    ],
+    "recommendations": ["Give after eating"]
+  },
+  {
+    "name": "Tuzalos",
+    "effectiveness": 0.75,
+    "sideEffects": [
+      "Sleepy",
+      "Dizzy",
+      "dry mouth",
+      "epilepsy-like seizures at large doses",
+      "skin rash"
+    ],
+    "recommendations": ["Can be given with or without food"]
+  },
+  {
+    "name": "Bodrex Flu Batuk Berdahak PE",
+    "effectiveness": 0.89,
+    "sideEffects": [
+      "Digestion disorders",
+      "Insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations and urinary retention",
+      "Long-term and large doses cause liver damage",
+      "Immune system disorders are rare hypersensitivity reactions",
+      "there is no data on anaphylactic reactions including anaphylactic shock, angioederma and prutitus",
+      "Rare skin and subcutaneous disorders: rash, urticaria, no data on serious skin reactions, erythema multiforme, Stevens-Johnson syndrome, toxic epidermal necrolysis and acute exanthema pustulosis"
+    ],
+    "recommendations": ["Give with food"]
+  },
+  {
+    "name": "Decolsin Tablet",
+    "effectiveness": 0.9,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["Consumed before or after eating"]
+  },
+  {
+    "name": "Decolgen Tablet",
+    "effectiveness": 0.95,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "dry mouth",
+      "palpitations",
+      "psychomotor",
+      "tachycardia",
+      "arrhythmia",
+      "urinary retention"
+    ],
+    "recommendations": ["Consumed after eating"]
+  },
+  {
+    "name": "Inza",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "difficult to urinate",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Mixagrip Flu",
+    "effectiveness": 0.78,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage",
+      "Insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "ventricular arrhythmias and palpitations\u0131"
+    ],
+    "recommendations": ["Consumed after eating"]
+  },
+  {
+    "name": "Dicom",
+    "effectiveness": 0.81,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "headache",
+      "insomnia",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "difficult to urinate"
+    ],
+    "recommendations": ["after eating"]
+  },
+  {
+    "name": "Grantusif",
+    "effectiveness": 0.94,
+    "sideEffects": [
+      "Mouth feels dry",
+      "sleepy",
+      "nauseous",
+      "Dizzy",
+      "constipation"
+    ],
+    "recommendations": ["Given after eating"]
+  },
+  {
+    "name": "Konidin",
+    "effectiveness": 0.82,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "headache",
+      "insomnia",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "difficult to urinate"
+    ],
+    "recommendations": ["Given after eating"]
+  },
+  {
+    "name": "Komix",
+    "effectiveness": 0.8,
+    "sideEffects": [
+      "Sleepy",
+      "digestive disorders",
+      "dry mouth",
+      "urinary retention"
+    ],
+    "recommendations": ["Given after eating"]
+  },
+  {
+    "name": "Komix Herbal Tube",
+    "effectiveness": 0.77,
+    "sideEffects": ["There have been no reported side effects"],
+    "recommendations": ["After eating. Shake first before drinking"]
+  },
+  {
+    "name": "Komix Herbal Kids Tube",
+    "effectiveness": 0.94,
+    "sideEffects": ["There have been no reported side effects"],
+    "recommendations": ["After eating. Shake first before drinking"]
+  },
+  {
+    "name": "Komix Herbal Sachet",
+    "effectiveness": 0.85,
+    "sideEffects": ["There have been no reported side effects"],
+    "recommendations": ["After eating. Shake first before drinking"]
+  },
+  {
+    "name": "Flucadex Tablet",
+    "effectiveness": 0.92,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses can cause liver damage"
+    ],
+    "recommendations": ["Give with food"]
+  },
+  {
+    "name": "Intunal-F Tablet",
+    "effectiveness": 0.79,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Stop Cold",
+    "effectiveness": 0.88,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "ventricular arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "difficult to urinate",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["Before or after eating"]
+  },
+  {
+    "name": "Tera - F",
+    "effectiveness": 0.82,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "palpitations",
+      "urinary retention",
+      "dry mouth",
+      "Long-term and large doses cause damage to liver function"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Paratusin Tablet",
+    "effectiveness": 0.76,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause liver damage"
+    ],
+    "recommendations": ["The medicine is taken after eating"]
+  },
+  {
+    "name": "Komix OBH",
+    "effectiveness": 0.85,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "headache",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention"
+    ],
+    "recommendations": ["Given after eating"]
+  },
+  {
+    "name": "Komix OBH Kids",
+    "effectiveness": 0.9,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "headache",
+      "insomnia",
+      "nervous",
+      "excitation",
+      "tremors",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention"
+    ],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Molexflu",
+    "effectiveness": 0.81,
+    "sideEffects": [
+      "This drug can cause indigestion drowsiness",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention",
+      "Long-term and large doses cause damage to liver function"
+    ],
+    "recommendations": ["Consumed before or after eating"]
+  },
+  {
+    "name": "Neozep Forte",
+    "effectiveness": 0.82,
+    "sideEffects": [
+      "Long-term and large doses of Paracetamol can cause liver damage",
+      "Sleepy",
+      "glaucoma",
+      "heart beat",
+      "nauseous",
+      "vomit",
+      "dry mouth",
+      "difficult to urinate",
+      "visual and psychomotor disorders",
+      "difficult to breathe",
+      "worried",
+      "hypertension",
+      "May increase intraocular pressure in children"
+    ],
+    "recommendations": ["The medicine is taken after eating"]
+  },
+  {
+    "name": "Procold Flu",
+    "effectiveness": 0.75,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "urinary retention",
+      "Long-term and large doses cause liver damage",
+      "Insomnia",
+      "nervous",
+      "excitation",
+      "tremors and ventricular arrhythmias"
+    ],
+    "recommendations": ["Consumed before or after eating"]
+  },
+  {
+    "name": "Sanaflu",
+    "effectiveness": 0.84,
+    "sideEffects": [
+      "Side effects that may occur when consuming Sanaflu are:",
+      "In the long term, paracetamol use can damage the liver",
+      "Increases blood pressure"
+    ],
+    "recommendations": ["Give with food"]
+  },
+  {
+    "name": "Ultraflu",
+    "effectiveness": 0.77,
+    "sideEffects": ["Large doses or long-term therapy may cause liver damage"],
+    "recommendations": ["After eating"]
+  },
+  {
+    "name": "Nalgestan",
+    "effectiveness": 0.87,
+    "sideEffects": [
+      "Sleepy",
+      "indigestion",
+      "psychomotor disorders",
+      "tachycardia",
+      "arrhythmia",
+      "dry mouth",
+      "palpitations",
+      "urinary retention"
+    ],
+    "recommendations": ["Before or after eating"]
+  }
 ]

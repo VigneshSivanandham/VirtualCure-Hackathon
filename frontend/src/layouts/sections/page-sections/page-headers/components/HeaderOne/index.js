@@ -114,7 +114,11 @@ function HeaderOne() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-twitter" />
+                  <MKBox
+                    component="i"
+                    color="white"
+                    className="fab fa-twitter"
+                  />
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -125,7 +129,11 @@ function HeaderOne() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-facebook" />
+                  <MKBox
+                    component="i"
+                    color="white"
+                    className="fab fa-facebook"
+                  />
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -136,7 +144,11 @@ function HeaderOne() {
                   p={1}
                   onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox component="i" color="white" className="fab fa-instagram" />
+                  <MKBox
+                    component="i"
+                    color="white"
+                    className="fab fa-instagram"
+                  />
                 </MKTypography>
               </MKBox>
             </MKBox>
@@ -148,7 +160,10 @@ function HeaderOne() {
         alignItems="center"
         minHeight="100%"
         sx={{
-          backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
+          backgroundImage: ({
+            palette: { gradients },
+            functions: { linearGradient, rgba },
+          }) =>
             `${linearGradient(
               rgba(gradients.dark.main, 0.5),
               rgba(gradients.dark.state, 0.5)
@@ -158,7 +173,15 @@ function HeaderOne() {
         }}
       >
         <Container>
-          <Grid container item xs={12} md={7} lg={6} flexDirection="column" justifyContent="center">
+          <Grid
+            container
+            item
+            xs={12}
+            md={7}
+            lg={6}
+            flexDirection="column"
+            justifyContent="center"
+          >
             <MKTypography
               variant="h1"
               color="white"
@@ -171,9 +194,15 @@ function HeaderOne() {
             >
               Material Kit
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} pr={6} mr={6}>
-              The time is now for it be okay to be great. People in this world shun people for being
-              nice.
+            <MKTypography
+              variant="body1"
+              color="white"
+              opacity={0.8}
+              pr={6}
+              mr={6}
+            >
+              The time is now for it be okay to be great. People in this world
+              shun people for being nice.
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
               <MKButton color="white">Get Started</MKButton>

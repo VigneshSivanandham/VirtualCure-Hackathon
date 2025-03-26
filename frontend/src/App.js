@@ -31,7 +31,7 @@ import UserSelection from "pages/UserSelection";
 import InitialDiagnosis from "pages/InitialDiagnosis";
 import DrugSimulation from "pages/DrugSimulation";
 import Summary from "pages/Summary";
-import './style.css';
+import "./style.css";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -39,7 +39,7 @@ export default function App() {
 
   useEffect(() => {
     const compare = pathname.includes("sign-in") || pathname.includes("home");
-    setIsShowNavBar(compare)
+    setIsShowNavBar(compare);
   }, [pathname]);
 
   return (
@@ -47,7 +47,10 @@ export default function App() {
       <CssBaseline />
       {!isShowNavBar ? <Navbar /> : ""}
       <Routes>
-        <Route path="/" element={<Navigate to="/pages/authentication/sign-in" />} />
+        <Route
+          path="/"
+          element={<Navigate to="/pages/authentication/sign-in" />}
+        />
         <Route path="/pages/authentication/sign-in" element={<SignIn />} />
         <Route path="/home" element={<Presentation />} />
         <Route path="/user-selection" element={<UserSelection />} />

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   Paper,
@@ -12,15 +12,15 @@ import {
   Select,
   MenuItem,
   Stack,
-} from '@mui/material';
+} from "@mui/material";
 
 const UserSelection = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: '',
-    age: '',
-    gender: '',
-    symptoms: '',
+    name: "",
+    age: "",
+    gender: "",
+    symptoms: "",
   });
 
   const handleChange = (e) => {
@@ -35,13 +35,16 @@ const UserSelection = () => {
     e.preventDefault();
     // Convert symptoms from string to an array
     const symptomsArray = formData.symptoms
-      .split(',')
+      .split(",")
       .map((symptom) => symptom.trim())
-      .filter((symptom) => symptom !== '');
+      .filter((symptom) => symptom !== "");
 
     // Store user data in localStorage for use across pages
-    localStorage.setItem('userData', JSON.stringify({ ...formData, symptoms: symptomsArray }));
-    navigate('/diagnosis');
+    localStorage.setItem(
+      "userData",
+      JSON.stringify({ ...formData, symptoms: symptomsArray })
+    );
+    navigate("/diagnosis");
   };
 
   return (
@@ -76,7 +79,7 @@ const UserSelection = () => {
                 value={formData.gender}
                 label="Gender"
                 onChange={handleChange}
-                style={{ padding: "13px"}}
+                style={{ padding: "13px" }}
               >
                 <MenuItem value="male">Male</MenuItem>
                 <MenuItem value="female">Female</MenuItem>

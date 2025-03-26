@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   Paper,
@@ -20,29 +20,35 @@ import {
   FormControl,
   InputLabel,
   TextField,
-} from '@mui/material';
-import { CheckCircle, Warning, TrendingUp, Science, LocalHospital } from '@mui/icons-material';
-import axios from 'axios';
+} from "@mui/material";
+import {
+  CheckCircle,
+  Warning,
+  TrendingUp,
+  Science,
+  LocalHospital,
+} from "@mui/icons-material";
+import axios from "axios";
 
 const DrugSimulation = () => {
   const navigate = useNavigate();
   const [userData, setUserData] = useState(null);
   const [drugData, setDrugData] = useState([]); // Store drug data from JSON
   const [formData, setFormData] = useState({
-    drugName: '',
-    dosage: '',
-    frequency: '',
-    duration: '',
+    drugName: "",
+    dosage: "",
+    frequency: "",
+    duration: "",
   });
   const [selectedDrug, setSelectedDrug] = useState(null); // Store selected drug details
   const [simulation, setSimulation] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  console.log("___1")
+  console.log("___1");
 
   useEffect(() => {
-    const storedData = localStorage.getItem('userData');
+    const storedData = localStorage.getItem("userData");
     // if (!storedData) {
     //   navigate('/');
     //   return;
@@ -50,10 +56,10 @@ const DrugSimulation = () => {
     setUserData(JSON.parse(storedData));
 
     // Load drug data from external JSON file
-    fetch('/drug_data.json')
+    fetch("/drug_data.json")
       .then((response) => response.json())
       .then((data) => setDrugData(data))
-      .catch((err) => console.error('Error loading drug data:', err));
+      .catch((err) => console.error("Error loading drug data:", err));
   }, [navigate]);
 
   const handleChange = (e) => {
@@ -64,7 +70,7 @@ const DrugSimulation = () => {
     }));
 
     // Update selected drug details dynamically
-    if (name === 'drugName') {
+    if (name === "drugName") {
       const drug = drugData.find((d) => d.name === value);
       setSelectedDrug(drug || null);
     }
@@ -77,18 +83,21 @@ const DrugSimulation = () => {
       setError(null);
 
       if (!selectedDrug) {
-        setError('Please select a valid drug.');
+        setError("Please select a valid drug.");
         setLoading(false);
         return;
       }
 
-      const response = await axios.post('http://localhost:8000/drug-simulation', {
-        patient_id: userData?.id || 1,
-        drug_name: formData.drugName,
-        dosage: parseFloat(formData.dosage),
-        frequency: formData.frequency,
-        duration: formData.duration,
-      });
+      const response = await axios.post(
+        "http://localhost:8000/drug-simulation",
+        {
+          patient_id: userData?.id || 1,
+          drug_name: formData.drugName,
+          dosage: parseFloat(formData.dosage),
+          frequency: formData.frequency,
+          duration: formData.duration,
+        }
+      );
 
       // Inject dynamic simulation data
       setSimulation({
@@ -97,10 +106,10 @@ const DrugSimulation = () => {
         recommendations: selectedDrug.recommendations,
       });
 
-      localStorage.setItem('simulationData', JSON.stringify(response.data));
+      localStorage.setItem("simulationData", JSON.stringify(response.data));
     } catch (err) {
-      setError('Failed to simulate drug interaction. Please try again.');
-      console.error('Simulation error:', err);
+      setError("Failed to simulate drug interaction. Please try again.");
+      console.error("Simulation error:", err);
     } finally {
       setLoading(false);
     }
@@ -119,19 +128,20 @@ const DrugSimulation = () => {
             <Card>
               <CardContent>
                 <Typography variant="h6" color="primary" gutterBottom>
-                  <Science sx={{ mr: 1, verticalAlign: 'middle' }} />
+                  <Science sx={{ mr: 1, verticalAlign: "middle" }} />
                   Effectiveness Analysis
                 </Typography>
                 <Typography variant="body1">
-                  Expected Effectiveness: {(simulation.effectiveness * 100).toFixed(1)}%
+                  Expected Effectiveness:{" "}
+                  {(simulation.effectiveness * 100).toFixed(1)}%
                 </Typography>
                 <Box sx={{ mt: 2, mb: 1 }}>
                   <div
                     style={{
                       width: `${simulation.effectiveness * 100}%`,
-                      height: '8px',
-                      backgroundColor: '#2196f3',
-                      borderRadius: '4px',
+                      height: "8px",
+                      backgroundColor: "#2196f3",
+                      borderRadius: "4px",
                     }}
                   />
                 </Box>
@@ -143,7 +153,7 @@ const DrugSimulation = () => {
             <Card>
               <CardContent>
                 <Typography variant="h6" color="error" gutterBottom>
-                  <Warning sx={{ mr: 1, verticalAlign: 'middle' }} />
+                  <Warning sx={{ mr: 1, verticalAlign: "middle" }} />
                   Side Effects
                 </Typography>
                 <List dense>
@@ -164,7 +174,7 @@ const DrugSimulation = () => {
             <Card>
               <CardContent>
                 <Typography variant="h6" color="primary" gutterBottom>
-                  <TrendingUp sx={{ mr: 1, verticalAlign: 'middle' }} />
+                  <TrendingUp sx={{ mr: 1, verticalAlign: "middle" }} />
                   Recommendations
                 </Typography>
                 <List>
@@ -192,14 +202,23 @@ const DrugSimulation = () => {
           Drug Simulation
         </Typography>
 
-        {error && <Alert severity="error" sx={{ mb: 3 }}>{error}</Alert>}
+        {error && (
+          <Alert severity="error" sx={{ mb: 3 }}>
+            {error}
+          </Alert>
+        )}
 
         <Box component="form" onSubmit={handleSubmit}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
               <FormControl fullWidth required>
                 <InputLabel>Drug Name</InputLabel>
-                <Select name="drugName" value={formData.drugName} onChange={handleChange} style={{ padding: "13px"}}>
+                <Select
+                  name="drugName"
+                  value={formData.drugName}
+                  onChange={handleChange}
+                  style={{ padding: "13px" }}
+                >
                   {drugData.map((drug, index) => (
                     <MenuItem key={index} value={drug.name}>
                       {drug.name}
@@ -211,7 +230,11 @@ const DrugSimulation = () => {
             <Grid item xs={12} sm={6}>
               <FormControl fullWidth required>
                 <InputLabel>Dosage (mg)</InputLabel>
-                <Select name="dosage" value={formData.dosage} onChange={handleChange} style={{ padding: "13px"}}>
+                <Select
+                  name="dosage"
+                  value={formData.dosage}
+                  onChange={handleChange}
+                >
                   {[...Array(13)].map((_, i) => (
                     <MenuItem key={i} value={50 + i * 50}>
                       {50 + i * 50} mg
@@ -221,18 +244,52 @@ const DrugSimulation = () => {
               </FormControl>
             </Grid>
             <Grid item xs={6}>
-              <TextField required fullWidth label="Times per day" name="frequency" value={formData.frequency} onChange={handleChange} />
+              <TextField
+                required
+                fullWidth
+                label="Times per day"
+                name="frequency"
+                value={formData.frequency}
+                onChange={handleChange}
+              />
             </Grid>
             <Grid item xs={6}>
-              <TextField required fullWidth label="Duration (days)" name="duration" type="number" value={formData.duration} onChange={handleChange} />
+              <TextField
+                required
+                fullWidth
+                label="Duration (days)"
+                name="duration"
+                type="number"
+                value={formData.duration}
+                onChange={handleChange}
+              />
             </Grid>
           </Grid>
 
-          <Button type="submit" variant="contained" sx={{ mt: 3, mr: 1 }} disabled={loading}>
-            {loading ? <CircularProgress size={24} sx={{ mr: 1 }} /> : 'Simulate Drug Interaction'}
+          <Button
+            type="submit"
+            variant="contained"
+            sx={{ mt: 3, mr: 1 }}
+            disabled={loading}
+          >
+            {loading ? (
+              <CircularProgress size={24} sx={{ mr: 1 }} />
+            ) : (
+              "Simulate Drug Interaction"
+            )}
           </Button>
-          <Button type="submit" variant="contained" sx={{ mt: 3 }} disabled={loading} onClick={() => navigate("/summary")}>
-            {loading ? <CircularProgress size={24} sx={{ mr: 1 }} /> : 'Summary'}
+          <Button
+            type="submit"
+            variant="contained"
+            sx={{ mt: 3 }}
+            disabled={loading}
+            onClick={() => navigate("/summary")}
+          >
+            {loading ? (
+              <CircularProgress size={24} sx={{ mr: 1 }} />
+            ) : (
+              "Summary"
+            )}
           </Button>
         </Box>
 

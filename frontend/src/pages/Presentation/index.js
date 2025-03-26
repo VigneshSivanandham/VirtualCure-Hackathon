@@ -1,4 +1,3 @@
-// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -22,20 +21,30 @@ import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-presentation.jpg";
 
 function Presentation() {
+  const backgroundStyles = {
+    backgroundImage: `url(${bgImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "top",
+    display: "grid",
+    placeItems: "center",
+  };
+
+  const cardStyles = ({ palette, functions, boxShadows }) => ({
+    p: 2,
+    mx: { xs: 2, lg: 3 },
+    mt: -8,
+    mb: 4,
+    backgroundColor: functions.rgba(palette.white.main, 0.8),
+    backdropFilter: "saturate(200%) blur(30px)",
+    boxShadow: boxShadows.xxl,
+  });
+
   return (
     <>
       <DefaultNavbar routes={[]} sticky />
-      <MKBox
-        minHeight="75vh"
-        width="100%"
-        sx={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
+
+      {/* Hero Section */}
+      <MKBox minHeight="75vh" width="100%" sx={backgroundStyles}>
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
@@ -43,10 +52,8 @@ function Presentation() {
               color="white"
               mt={-6}
               mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
+              sx={({ breakpoints, typography }) => ({
+                [breakpoints.down("md")]: { fontSize: typography.size["3xl"] },
               })}
             >
               VirtualCure
@@ -66,28 +73,21 @@ function Presentation() {
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
-              fontSize={"1rem"}
+              fontSize="1rem"
             >
               Smarter, Safer, & Personalized Healthcare at Your Fingertips!
             </MKTypography>
           </Grid>
         </Container>
       </MKBox>
-      <Card
-        sx={{
-          p: 2,
-          mx: { xs: 2, lg: 3 },
-          mt: -8,
-          mb: 4,
-          backgroundColor: ({ palette: { white }, functions: { rgba } }) =>
-            rgba(white.main, 0.8),
-          backdropFilter: "saturate(200%) blur(30px)",
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
-        }}
-      >
+
+      {/* Main Content */}
+      <Card sx={cardStyles}>
         <Counters />
         <Information />
       </Card>
+
+      {/* Footer */}
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

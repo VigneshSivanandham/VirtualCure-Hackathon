@@ -29,6 +29,15 @@ const Navbar = () => {
         <Box sx={{ display: "flex", gap: 2 }}>
           <Button
             color="inherit"
+            onClick={() => navigate("/home")}
+            sx={{
+              backgroundColor: "trasparent",
+            }}
+          >
+            Home
+          </Button>
+          <Button
+            color="inherit"
             // onClick={() => navigate('/')}
             sx={{
               backgroundColor: isActive("/user-selection")
@@ -66,6 +75,7 @@ const Navbar = () => {
           )}
           {userType !== "Patient" ? (
             <Button
+              className="summary-btn"
               color="inherit"
               // onClick={() => navigate('/summary')}
               sx={{

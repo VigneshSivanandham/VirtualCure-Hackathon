@@ -117,23 +117,6 @@ function SignInBasic() {
                       Sign In
                     </MKButton>
                   </MKBox>
-
-                  {/* Sign-Up Link */}
-                  <MKBox mt={3} mb={1} textAlign="center">
-                    <MKTypography variant="button" color="text">
-                      Don&apos;t have an account?{" "}
-                      <MKTypography
-                        component={Link}
-                        to="/authentication/sign-up/cover"
-                        variant="button"
-                        color="info"
-                        fontWeight="medium"
-                        textGradient
-                      >
-                        Sign up
-                      </MKTypography>
-                    </MKTypography>
-                  </MKBox>
                 </MKBox>
               </MKBox>
             </Card>

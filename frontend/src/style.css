@@ -3,5 +3,18 @@ button {
 }
 
 #root .MuiContainer-root {
-  max-width: fit-content !important;
+  max-width: none !important;
+}
+
+.print-icon:hover {
+  color: red;
+}
+
+.print-report .re-diagnoise-btn,
+.print-report .print-icon {
+  display: none;
+}
+
+.print-report .summary-btn {
+  background-color: transparent !important;
 }

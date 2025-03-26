@@ -25,10 +25,13 @@ import {
   Assignment,
   CheckCircle,
   Warning,
+  Print,
 } from "@mui/icons-material";
 
 const Summary = () => {
   const navigate = useNavigate();
+  const root = document.getElementById("root");
+
   const [data, setData] = useState({
     user: null,
     diagnosis: null,
@@ -56,11 +59,25 @@ const Summary = () => {
     return null;
   }
 
+  const beforePrint = function() {
+    root.classList.add('print-report');
+  };
+  const afterPrint = function() {
+    root.classList.remove('print-report');
+  };
+  window.onbeforeprint = beforePrint;
+  window.onafterprint = afterPrint;
+
+  const onClick = () => {
+    window.print();
+  }
+
   return (
     <Container sx={{ py: 4 }}>
       <Paper elevation={3} sx={{ p: 4 }}>
         <Typography variant="h4" gutterBottom>
           Virtual Cure Summary Report
+          <Print className="print-icon" style={{marginLeft: '1rem', cursor: 'pointer'}} onClick={onClick} />
         </Typography>
 
         <Grid
@@ -249,6 +266,7 @@ const Summary = () => {
 
         <Box sx={{ mt: 4, display: "flex", justifyContent: "space-between" }}>
           <Button
+            className="re-diagnoise-btn"
             variant="contained"
             onClick={() => {
               localStorage.clear();

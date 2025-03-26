@@ -48,10 +48,13 @@ const UserSelection = () => {
   };
 
   return (
-    <Container maxWidth="md" sx={{ py: 4 }}>
-      <Paper elevation={3} sx={{ p: 4 }}>
-        <Typography variant="h4" gutterBottom>
-          Patient Information
+    <Container maxWidth="sm" sx={{ py: 4 }}>
+      <Paper
+        elevation={4}
+        sx={{ p: 4, borderRadius: "12px", textAlign: "center" }}
+      >
+        <Typography variant="h4" gutterBottom color="primary">
+          🏥 Patient Information
         </Typography>
         <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
           <Stack spacing={3}>
@@ -62,6 +65,12 @@ const UserSelection = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              error={formData.name.length > 0 && formData.name.length < 2}
+              helperText={
+                formData.name.length > 0 && formData.name.length < 2
+                  ? "Name must be at least 2 characters"
+                  : ""
+              }
             />
             <TextField
               required
@@ -71,6 +80,17 @@ const UserSelection = () => {
               type="number"
               value={formData.age}
               onChange={handleChange}
+              inputProps={{ min: 1 }}
+              error={
+                formData.age !== "" &&
+                (formData.age <= 0 || isNaN(formData.age))
+              }
+              helperText={
+                formData.age !== "" &&
+                (formData.age <= 0 || isNaN(formData.age))
+                  ? "Enter a valid age"
+                  : ""
+              }
             />
             <FormControl fullWidth required>
               <InputLabel>Gender</InputLabel>
@@ -81,9 +101,9 @@ const UserSelection = () => {
                 onChange={handleChange}
                 style={{ padding: "13px" }}
               >
-                <MenuItem value="male">Male</MenuItem>
-                <MenuItem value="female">Female</MenuItem>
-                <MenuItem value="other">Other</MenuItem>
+                <MenuItem value="male">♂️ Male</MenuItem>
+                <MenuItem value="female">♀️ Female</MenuItem>
+                <MenuItem value="other">⚧️ Other</MenuItem>
               </Select>
             </FormControl>
             <TextField
@@ -98,7 +118,7 @@ const UserSelection = () => {
               type="submit"
               variant="contained"
               size="large"
-              sx={{ mt: 3 }}
+              sx={{ mt: 3, py: 1.5, fontSize: "1rem", fontWeight: "bold" }}
               disabled={!formData.name || !formData.age || !formData.gender}
             >
               Proceed to Diagnosis

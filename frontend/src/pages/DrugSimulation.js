@@ -234,6 +234,7 @@ const DrugSimulation = () => {
                   name="dosage"
                   value={formData.dosage}
                   onChange={handleChange}
+                  style={{ padding: "13px" }}
                 >
                   {[...Array(13)].map((_, i) => (
                     <MenuItem key={i} value={50 + i * 50}>

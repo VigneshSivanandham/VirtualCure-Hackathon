@@ -20,8 +20,8 @@ function SignInBasic() {
     setUserName(event?.target?.value);
   };
 
-  const onUserTypeChange = (event) => {
-    sessionStorage.setItem("usertype", event?.target?.value);
+  const onUserTypeChange = (value) => {
+    sessionStorage.setItem("usertype", value);
   };
 
   const submitSignIn = () => {

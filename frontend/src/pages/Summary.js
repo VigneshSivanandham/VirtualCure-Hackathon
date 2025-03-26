@@ -57,15 +57,15 @@ const Summary = () => {
   }
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container sx={{ py: 4 }}>
       <Paper elevation={3} sx={{ p: 4 }}>
         <Typography variant="h4" gutterBottom>
           Virtual Cure Summary Report
         </Typography>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={2} style={{ display: "grid", gridTemplateColumns: '1fr 1fr'}}>
           {/* Patient Information */}
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={4} style={{ maxWidth: '100%'}}>
             <Card>
               <CardContent>
                 <Typography variant="h6" color="primary" gutterBottom>
@@ -98,55 +98,6 @@ const Summary = () => {
                   ))}
                 </Box>
               </CardContent>
-            </Card>
-          </Grid>
-
-          {/* Diagnosis Results */}
-          <Grid item xs={12} md={4}>
-            <Card>
-              <CardContent>
-                <Typography variant="h6" color="primary" gutterBottom>
-                  <Assignment sx={{ mr: 1, verticalAlign: "middle" }} />
-                  Diagnosis Results
-                </Typography>
-                <Typography variant="body1" paragraph>
-                  {data.diagnosis.diagnosis}
-                </Typography>
-                <Box sx={{ my: 2 }}>
-                  <Typography variant="subtitle2" gutterBottom>
-                    Confidence Level:{" "}
-                    {(data.diagnosis.confidence * 100).toFixed(1)}%
-                  </Typography>
-                  <div
-                    style={{
-                      width: `${data.diagnosis.confidence * 100}%`,
-                      height: "8px",
-                      backgroundColor: "#2196f3",
-                      borderRadius: "4px",
-                    }}
-                  />
-                </Box>
-                <Divider sx={{ my: 2 }} />
-                <Typography variant="subtitle2" gutterBottom>
-                  Recommendations:
-                </Typography>
-                <List dense>
-                  {data.diagnosis.recommendations.map((rec, index) => (
-                    <ListItem key={index}>
-                      <ListItemIcon>
-                        <CheckCircle color="success" fontSize="small" />
-                      </ListItemIcon>
-                      <ListItemText primary={rec} />
-                    </ListItem>
-                  ))}
-                </List>
-              </CardContent>
-            </Card>
-          </Grid>
-
-          {/* Drug Simulation Results */}
-          <Grid item xs={12} md={4}>
-            <Card>
               <CardContent>
                 <Typography variant="h6" color="primary" gutterBottom>
                   <Science sx={{ mr: 1, verticalAlign: "middle" }} />
@@ -195,6 +146,101 @@ const Summary = () => {
               </CardContent>
             </Card>
           </Grid>
+
+          {/* Diagnosis Results */}
+          <Grid item xs={12} md={4} style={{ maxWidth: '100%'}}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" color="primary" gutterBottom>
+                  <Assignment sx={{ mr: 1, verticalAlign: "middle" }} />
+                  Diagnosis Results
+                </Typography>
+                <Typography variant="body1" paragraph>
+                  {data.diagnosis.diagnosis}
+                </Typography>
+                <Box sx={{ my: 2 }}>
+                  <Typography variant="subtitle2" gutterBottom>
+                    Confidence Level:{" "}
+                    {(data.diagnosis.confidence * 100).toFixed(1)}%
+                  </Typography>
+                  <div
+                    style={{
+                      width: `${data.diagnosis.confidence * 100}%`,
+                      height: "8px",
+                      backgroundColor: "#2196f3",
+                      borderRadius: "4px",
+                    }}
+                  />
+                </Box>
+                <Divider sx={{ my: 2 }} />
+                <Typography variant="subtitle2" gutterBottom>
+                  Recommendations:
+                </Typography>
+                <List dense>
+                  {data.diagnosis.recommendations.map((rec, index) => (
+                    <ListItem key={index}>
+                      <ListItemIcon>
+                        <CheckCircle color="success" fontSize="small" />
+                      </ListItemIcon>
+                      <ListItemText primary={rec} />
+                    </ListItem>
+                  ))}
+                </List>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* Drug Simulation Results */}
+          {/* <Grid item xs={12} md={4}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6" color="primary" gutterBottom>
+                  <Science sx={{ mr: 1, verticalAlign: "middle" }} />
+                  Drug Simulation Results
+                </Typography>
+                <Typography variant="subtitle2" gutterBottom>
+                  Effectiveness:{" "}
+                  {(data.simulation.effectiveness * 100).toFixed(1)}%
+                </Typography>
+                <div
+                  style={{
+                    width: `${data.simulation.effectiveness * 100}%`,
+                    height: "8px",
+                    backgroundColor: "#4caf50",
+                    borderRadius: "4px",
+                    marginBottom: "16px",
+                  }}
+                />
+                <Typography variant="subtitle2" gutterBottom>
+                  Potential Side Effects:
+                </Typography>
+                <List dense>
+                  {data.simulation.side_effects.map((effect, index) => (
+                    <ListItem key={index}>
+                      <ListItemIcon>
+                        <Warning color="warning" fontSize="small" />
+                      </ListItemIcon>
+                      <ListItemText primary={effect} />
+                    </ListItem>
+                  ))}
+                </List>
+                <Divider sx={{ my: 2 }} />
+                <Typography variant="subtitle2" gutterBottom>
+                  Treatment Recommendations:
+                </Typography>
+                <List dense>
+                  {data.simulation.recommendations.map((rec, index) => (
+                    <ListItem key={index}>
+                      <ListItemIcon>
+                        <LocalHospital color="primary" fontSize="small" />
+                      </ListItemIcon>
+                      <ListItemText primary={rec} />
+                    </ListItem>
+                  ))}
+                </List>
+              </CardContent>
+            </Card>
+          </Grid> */}
         </Grid>
 
         <Box sx={{ mt: 4, display: "flex", justifyContent: "space-between" }}>

@@ -41,7 +41,13 @@ function HorizontalTeamCard({ image, name, position, description }) {
           </MKBox>
         </Grid>
         <Grid item xs={12} md={6} lg={8} sx={{ my: "auto" }}>
-          <MKBox pt={{ xs: 1, lg: 2.5 }} pb={2.5} pr={4} pl={{ xs: 4, lg: 1 }} lineHeight={1}>
+          <MKBox
+            pt={{ xs: 1, lg: 2.5 }}
+            pb={2.5}
+            pr={4}
+            pl={{ xs: 4, lg: 1 }}
+            lineHeight={1}
+          >
             <MKTypography variant="h5">{name}</MKTypography>
             <MKTypography variant="h6" color={position.color} mb={1}>
               {position.label}

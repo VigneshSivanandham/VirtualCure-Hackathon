@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   Paper,
@@ -14,9 +14,9 @@ import {
   Divider,
   Alert,
   LinearProgress,
-} from '@mui/material';
-import { CheckCircle, ArrowBack, ArrowForward } from '@mui/icons-material';
-import axios from 'axios';
+} from "@mui/material";
+import { CheckCircle, ArrowBack, ArrowForward } from "@mui/icons-material";
+import axios from "axios";
 
 const InitialDiagnosis = () => {
   const navigate = useNavigate();
@@ -26,9 +26,9 @@ const InitialDiagnosis = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const storedData = localStorage.getItem('userData');
+    const storedData = localStorage.getItem("userData");
     if (!storedData) {
-      navigate('/');
+      navigate("/");
       return;
     }
     setUserData(JSON.parse(storedData));
@@ -36,45 +36,45 @@ const InitialDiagnosis = () => {
   }, [navigate]);
 
   const getErrorMessage = (error) => {
-    if (typeof error === 'string') return error;
+    if (typeof error === "string") return error;
     if (error.response?.data?.detail) {
       const detail = error.response.data.detail;
       if (Array.isArray(detail)) {
         // Handle validation errors array
-        return detail.map(err => err.msg).join(', ');
+        return detail.map((err) => err.msg).join(", ");
       }
-      if (typeof detail === 'object') {
+      if (typeof detail === "object") {
         if (detail.msg) return detail.msg;
         return JSON.stringify(detail);
       }
       return detail;
     }
     if (error.message) return error.message;
-    if (typeof error === 'object') return JSON.stringify(error);
-    return 'An unexpected error occurred. Please try again.';
+    if (typeof error === "object") return JSON.stringify(error);
+    return "An unexpected error occurred. Please try again.";
   };
 
   const getDiagnosis = async (patientData) => {
     try {
       setLoading(true);
       setError(null);
-      
-      console.log('Sending diagnosis request with data:', patientData);
-      
-      const response = await axios.post('http://localhost:8000/diagnose', {
+
+      console.log("Sending diagnosis request with data:", patientData);
+
+      const response = await axios.post("http://localhost:8000/diagnose", {
         name: patientData.name,
         age: parseInt(patientData.age),
         symptoms: patientData.symptoms,
         id: null,
-        medical_history: null
+        medical_history: null,
       });
 
-      console.log('Received diagnosis response:', response.data);
-      
+      console.log("Received diagnosis response:", response.data);
+
       setDiagnosis(response.data);
-      localStorage.setItem('diagnosisData', JSON.stringify(response.data));
+      localStorage.setItem("diagnosisData", JSON.stringify(response.data));
     } catch (err) {
-      console.error('Diagnosis error:', err);
+      console.error("Diagnosis error:", err);
       setError(getErrorMessage(err));
     } finally {
       setLoading(false);
@@ -84,7 +84,7 @@ const InitialDiagnosis = () => {
   if (loading) {
     return (
       <Container maxWidth="md" sx={{ py: 4 }}>
-        <Paper elevation={3} sx={{ p: 4, textAlign: 'center' }}>
+        <Paper elevation={3} sx={{ p: 4, textAlign: "center" }}>
           <Typography variant="h5" gutterBottom>
             Analyzing Symptoms...
           </Typography>
@@ -105,18 +105,17 @@ const InitialDiagnosis = () => {
           <Alert severity="error" sx={{ mb: 3 }}>
             {error}
           </Alert>
-          <Box sx={{ display: 'flex', gap: 2, justifyContent: 'space-between' }}>
-            <Button 
-              variant="outlined" 
+          <Box
+            sx={{ display: "flex", gap: 2, justifyContent: "space-between" }}
+          >
+            <Button
+              variant="outlined"
               startIcon={<ArrowBack />}
-              onClick={() => navigate('/')}
+              onClick={() => navigate("/")}
             >
               Back to Patient Info
             </Button>
-            <Button 
-              variant="contained"
-              onClick={() => getDiagnosis(userData)}
-            >
+            <Button variant="contained" onClick={() => getDiagnosis(userData)}>
               Retry Diagnosis
             </Button>
           </Box>
@@ -131,13 +130,17 @@ const InitialDiagnosis = () => {
         <Typography variant="h4" gutterBottom>
           Initial Diagnosis
         </Typography>
-        
+
         {diagnosis && (
           <Box sx={{ mt: 3 }}>
             <Typography variant="h6" gutterBottom color="primary">
               Diagnosis Assessment
             </Typography>
-            <Typography variant="body1" paragraph sx={{ whiteSpace: 'pre-line' }}>
+            <Typography
+              variant="body1"
+              paragraph
+              sx={{ whiteSpace: "pre-line" }}
+            >
               {diagnosis.diagnosis}
             </Typography>
 
@@ -148,14 +151,14 @@ const InitialDiagnosis = () => {
               <LinearProgress
                 variant="determinate"
                 value={diagnosis.confidence * 100}
-                sx={{ 
-                  height: 10, 
+                sx={{
+                  height: 10,
                   borderRadius: 5,
-                  backgroundColor: 'rgba(33, 150, 243, 0.2)',
-                  '& .MuiLinearProgress-bar': {
-                    backgroundColor: '#2196f3',
+                  backgroundColor: "rgba(33, 150, 243, 0.2)",
+                  "& .MuiLinearProgress-bar": {
+                    backgroundColor: "#2196f3",
                     borderRadius: 5,
-                  }
+                  },
                 }}
               />
             </Box>
@@ -176,18 +179,25 @@ const InitialDiagnosis = () => {
               ))}
             </List>
 
-            <Box sx={{ mt: 4, display: 'flex', gap: 2, justifyContent: 'space-between' }}>
-              <Button 
-                variant="contained" 
+            <Box
+              sx={{
+                mt: 4,
+                display: "flex",
+                gap: 2,
+                justifyContent: "space-between",
+              }}
+            >
+              <Button
+                variant="contained"
                 startIcon={<ArrowBack />}
-                onClick={() => navigate('/user-selection')}
+                onClick={() => navigate("/user-selection")}
               >
                 Back
               </Button>
               <Button
                 variant="contained"
                 endIcon={<ArrowForward />}
-                onClick={() => navigate('/drug-simulation')}
+                onClick={() => navigate("/drug-simulation")}
               >
                 Proceed to Drug Simulation
               </Button>
@@ -199,4 +209,4 @@ const InitialDiagnosis = () => {
   );
 };
 
-export default InitialDiagnosis; 
+export default InitialDiagnosis;

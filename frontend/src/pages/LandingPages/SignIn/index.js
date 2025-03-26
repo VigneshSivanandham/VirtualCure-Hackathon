@@ -39,7 +39,10 @@ function SignInBasic() {
         width="100%"
         minHeight="100vh"
         sx={{
-          backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
+          backgroundImage: ({
+            functions: { linearGradient, rgba },
+            palette: { gradients },
+          }) =>
             `${linearGradient(
               rgba(gradients.dark.main, 0.6),
               rgba(gradients.dark.state, 0.6)
@@ -49,8 +52,21 @@ function SignInBasic() {
           backgroundRepeat: "no-repeat",
         }}
       />
-      <MKBox px={1} width="100%" height="100vh" mx="auto" position="relative" zIndex={2}>
-        <Grid container spacing={1} justifyContent="center" alignItems="center" height="100%">
+      <MKBox
+        px={1}
+        width="100%"
+        height="100vh"
+        mx="auto"
+        position="relative"
+        zIndex={2}
+      >
+        <Grid
+          container
+          spacing={1}
+          justifyContent="center"
+          alignItems="center"
+          height="100%"
+        >
           <Grid item xs={11} sm={9} md={5} lg={4} xl={3}>
             <Card>
               <MKBox
@@ -74,13 +90,23 @@ function SignInBasic() {
               <MKBox pt={4} pb={3} px={3}>
                 <MKBox component="form" role="form">
                   <MKBox mb={2}>
-                    <MKInput type="text" label="Username" fullWidth onChange={onUserNameChange} />
+                    <MKInput
+                      type="text"
+                      label="Username"
+                      fullWidth
+                      onChange={onUserNameChange}
+                    />
                   </MKBox>
                   <MKBox mb={2}>
                     <MKDropdown onChange={onUserTypeChange} required />
                   </MKBox>
                   <MKBox mt={4} mb={1}>
-                    <MKButton variant="gradient" color="info" fullWidth onClick={submitSignIn}>
+                    <MKButton
+                      variant="gradient"
+                      color="info"
+                      fullWidth
+                      onClick={submitSignIn}
+                    >
                       sign in
                     </MKButton>
                   </MKBox>

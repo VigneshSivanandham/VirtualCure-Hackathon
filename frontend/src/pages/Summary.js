@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   Paper,
@@ -17,7 +17,7 @@ import {
   Button,
   Chip,
   Divider,
-} from '@mui/material';
+} from "@mui/material";
 import {
   Person,
   LocalHospital,
@@ -25,7 +25,7 @@ import {
   Assignment,
   CheckCircle,
   Warning,
-} from '@mui/icons-material';
+} from "@mui/icons-material";
 
 const Summary = () => {
   const navigate = useNavigate();
@@ -36,12 +36,12 @@ const Summary = () => {
   });
 
   useEffect(() => {
-    const userData = localStorage.getItem('userData');
-    const diagnosisData = localStorage.getItem('diagnosisData');
-    const simulationData = localStorage.getItem('simulationData');
+    const userData = localStorage.getItem("userData");
+    const diagnosisData = localStorage.getItem("diagnosisData");
+    const simulationData = localStorage.getItem("simulationData");
 
     if (!userData || !diagnosisData || !simulationData) {
-      navigate('/');
+      navigate("/");
       return;
     }
 
@@ -69,27 +69,24 @@ const Summary = () => {
             <Card>
               <CardContent>
                 <Typography variant="h6" color="primary" gutterBottom>
-                  <Person sx={{ mr: 1, verticalAlign: 'middle' }} />
+                  <Person sx={{ mr: 1, verticalAlign: "middle" }} />
                   Patient Information
                 </Typography>
                 <List dense>
                   <ListItem>
-                    <ListItemText
-                    />
+                    <ListItemText />
                   </ListItem>
                   <ListItem>
-                    <ListItemText
-                    />
+                    <ListItemText />
                   </ListItem>
                   <ListItem>
-                    <ListItemText
-                    />
+                    <ListItemText />
                   </ListItem>
                 </List>
                 <Typography variant="subtitle2" sx={{ mt: 2 }}>
                   Reported Symptoms:
                 </Typography>
-                <Box sx={{ mt: 1, display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                <Box sx={{ mt: 1, display: "flex", flexWrap: "wrap", gap: 1 }}>
                   {data.user.symptoms.map((symptom, index) => (
                     <Chip
                       key={index}
@@ -109,7 +106,7 @@ const Summary = () => {
             <Card>
               <CardContent>
                 <Typography variant="h6" color="primary" gutterBottom>
-                  <Assignment sx={{ mr: 1, verticalAlign: 'middle' }} />
+                  <Assignment sx={{ mr: 1, verticalAlign: "middle" }} />
                   Diagnosis Results
                 </Typography>
                 <Typography variant="body1" paragraph>
@@ -117,14 +114,15 @@ const Summary = () => {
                 </Typography>
                 <Box sx={{ my: 2 }}>
                   <Typography variant="subtitle2" gutterBottom>
-                    Confidence Level: {(data.diagnosis.confidence * 100).toFixed(1)}%
+                    Confidence Level:{" "}
+                    {(data.diagnosis.confidence * 100).toFixed(1)}%
                   </Typography>
                   <div
                     style={{
                       width: `${data.diagnosis.confidence * 100}%`,
-                      height: '8px',
-                      backgroundColor: '#2196f3',
-                      borderRadius: '4px',
+                      height: "8px",
+                      backgroundColor: "#2196f3",
+                      borderRadius: "4px",
                     }}
                   />
                 </Box>
@@ -151,19 +149,20 @@ const Summary = () => {
             <Card>
               <CardContent>
                 <Typography variant="h6" color="primary" gutterBottom>
-                  <Science sx={{ mr: 1, verticalAlign: 'middle' }} />
+                  <Science sx={{ mr: 1, verticalAlign: "middle" }} />
                   Drug Simulation Results
                 </Typography>
                 <Typography variant="subtitle2" gutterBottom>
-                  Effectiveness: {(data.simulation.effectiveness * 100).toFixed(1)}%
+                  Effectiveness:{" "}
+                  {(data.simulation.effectiveness * 100).toFixed(1)}%
                 </Typography>
                 <div
                   style={{
                     width: `${data.simulation.effectiveness * 100}%`,
-                    height: '8px',
-                    backgroundColor: '#4caf50',
-                    borderRadius: '4px',
-                    marginBottom: '16px',
+                    height: "8px",
+                    backgroundColor: "#4caf50",
+                    borderRadius: "4px",
+                    marginBottom: "16px",
                   }}
                 />
                 <Typography variant="subtitle2" gutterBottom>
@@ -198,8 +197,14 @@ const Summary = () => {
           </Grid>
         </Grid>
 
-        <Box sx={{ mt: 4, display: 'flex', justifyContent: 'space-between' }}>
-          <Button variant="contained" onClick={() => {localStorage.clear(); navigate('/user-selection')}}>
+        <Box sx={{ mt: 4, display: "flex", justifyContent: "space-between" }}>
+          <Button
+            variant="contained"
+            onClick={() => {
+              localStorage.clear();
+              navigate("/user-selection");
+            }}
+          >
             Re-diagnoise
           </Button>
         </Box>
@@ -209,4 +214,4 @@ const Summary = () => {
 };
 
 export { Summary };
-export default Summary; 
+export default Summary;

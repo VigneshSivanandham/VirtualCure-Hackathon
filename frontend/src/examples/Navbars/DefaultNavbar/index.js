@@ -44,9 +44,17 @@ function DefaultNavbar({ image, transparent, light, sticky, relative }) {
         backgroundColor={"none"}
         width={"auto"}
       >
-        <MKBox display="flex" justifyContent="space-between" alignItems="center">
+        <MKBox
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+        >
           <MKBox component={Link} to="/" lineHeight={1}>
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
+            <MKTypography
+              variant="button"
+              fontWeight="bold"
+              color={light ? "white" : "dark"}
+            >
               {window.innerWidth > 600 ? (
                 <MKBox
                   component="img"

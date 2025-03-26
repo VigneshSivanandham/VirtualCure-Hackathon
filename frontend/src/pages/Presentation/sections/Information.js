@@ -31,7 +31,6 @@ import bgFront from "assets/images/rotating-card-bg-front.jpeg";
 import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 function Information() {
-
   const userType = sessionStorage.getItem("usertype");
 
   // const getRoutes = () =>{
@@ -48,7 +47,14 @@ function Information() {
   return (
     <MKBox component="section" py={6} my={6}>
       <Container>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
+        <Grid
+          container
+          item
+          xs={11}
+          spacing={3}
+          alignItems="center"
+          sx={{ mx: "auto" }}
+        >
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             <RotatingCard>
               <RotatingCardFront
@@ -69,7 +75,7 @@ function Information() {
                 description="You will save a lot of time going from prototyping to full-functional AI. AI-Powered Personalized Healthcare & Predictive Medicine VirtualCure UI Overview (Role-Based Access)"
                 action={{
                   type: "internal",
-                  route: '/user-selection',
+                  route: "/user-selection",
                   label: "Ask VirtualCure",
                 }}
               />

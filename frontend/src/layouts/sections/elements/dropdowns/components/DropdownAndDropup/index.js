@@ -61,7 +61,11 @@ function DropdownAndDropup() {
             <MKButton variant="gradient" color="info" onClick={openDropdown}>
               Dropdown <Icon sx={dropdownIconStyles}>expand_more</Icon>
             </MKButton>
-            <Menu anchorEl={dropdown} open={Boolean(dropdown)} onClose={closeDropdown}>
+            <Menu
+              anchorEl={dropdown}
+              open={Boolean(dropdown)}
+              onClose={closeDropdown}
+            >
               <MenuItem onClick={closeDropdown}>Action</MenuItem>
               <MenuItem onClick={closeDropdown}>Another action</MenuItem>
               <MenuItem onClick={closeDropdown}>Something else here</MenuItem>

@@ -98,7 +98,12 @@ function TransparentBlogCard({ image, title, description, action }) {
             </MKTypography>
           </Link>
         ) : (
-          <MuiLink href={action.route} target="_blank" rel="noreferrer" sx={cardActionStyles}>
+          <MuiLink
+            href={action.route}
+            target="_blank"
+            rel="noreferrer"
+            sx={cardActionStyles}
+          >
             <MKTypography variant="h5" gutterBottom>
               {title}
             </MKTypography>

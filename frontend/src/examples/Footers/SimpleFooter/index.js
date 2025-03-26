@@ -41,7 +41,11 @@ function SimpleFooter({ company, links, light }) {
         lineHeight={1}
       >
         <Link href={link.href} target="_blank">
-          <MKTypography variant="button" fontWeight="regular" color={light ? "white" : "text"}>
+          <MKTypography
+            variant="button"
+            fontWeight="regular"
+            color={light ? "white" : "text"}
+          >
             {link.name}
           </MKTypography>
         </Link>
@@ -67,7 +71,11 @@ function SimpleFooter({ company, links, light }) {
         >
           All rights reserved to
           <Link href={href} target="_blank">
-            <MKTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
+            <MKTypography
+              variant="button"
+              fontWeight="medium"
+              color={light ? "white" : "dark"}
+            >
               &nbsp;{name}&nbsp;
             </MKTypography>
           </Link>

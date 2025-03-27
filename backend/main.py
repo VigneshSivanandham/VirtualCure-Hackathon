@@ -2,17 +2,18 @@ from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
-import os
 from openai import OpenAI
 from dotenv import load_dotenv
-import aiohttp
-from datetime import datetime
+from services.biogpt_service import BioGPTModel
+from routes import simulations
 
 load_dotenv()
 
 # Set Groq API key
 GROQ_API_KEY = "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"
-MODEL_NAME = "deepseek-r1-distill-llama-70b"  # Updated to use a supported Groq model
+MODEL_NAME = "deepseek-r1-distill-llama-70b"  
+biogpt_model = BioGPTModel()
+
 
 app = FastAPI(title="Virtual Cure API")
 
@@ -131,10 +132,16 @@ RECOMMENDATIONS:
         print(f"Error in diagnosis: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
+# Drug Simulation Endpoint
+app.include_router(simulations.router)
+
 @app.post("/drug-simulation")
-async def simulate_drug_interaction(simulation: DrugSimulation):
+async def simulate_drug_interaction(simulation: simulations.SimulationRequest):
+    """
+    This endpoint takes drug details and calls BioGPT to generate an AI-powered drug interaction analysis.
+    """
     try:
-        # Prepare prompt for BioGPT simulation
+        # Prepare prompt for BioGPT
         prompt = f"""Analyze drug interaction for:
         Drug: {simulation.drug_name}
         Dosage: {simulation.dosage}mg
@@ -146,28 +153,19 @@ async def simulate_drug_interaction(simulation: DrugSimulation):
         3. Drug interactions
         4. Recommendations"""
 
-        # Here we'll simulate a response since we're not actually calling BioGPT
-        simulation_result = {
-            "effectiveness": 0.75,
-            "side_effects": [
-                "Mild drowsiness",
-                "Potential nausea",
-                "Temporary dizziness"
-            ],
-            "interactions": [],
-            "recommendations": [
-                "Take with food",
-                "Monitor for drowsiness",
-                "Stay hydrated",
-                "Report any severe side effects"
-            ]
+        # Call BioGPT for response
+        response = biogpt_model.generate_response(prompt)
+
+        return {
+            "effectiveness": response.get("effectiveness", "Unknown"),
+            "side_effects": response.get("side_effects", ["Not listed"]),
+            "interactions": response.get("interactions", ["None detected"]),
+            "recommendations": response.get("recommendations", ["Consult your doctor before use"])
         }
-
-        return simulation_result
-
+    
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
+        return {"error": str(e)}
+    
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -120,7 +120,7 @@ const Summary = () => {
                   Drug Simulation Results
                 </Typography>
                 <Typography variant="subtitle2" gutterBottom>
-                  Effectiveness:{" "}
+                  Consolidated Effectiveness:{" "}
                   {(data.simulation.effectiveness * 100).toFixed(1)}%
                 </Typography>
                 <div

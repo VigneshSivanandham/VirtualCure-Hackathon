@@ -1,27 +1,37 @@
 import random
-from backend.models.models import SimulationRequest, SimulationResult
-from backend.utils.storage import load_data
-from backend.utils.logger import log_info, log_error
+from models.models import SimulationRequest, SimulationResult
+from utils.storage import load_data
+from utils.logger import log_info, log_error
+from services.biogpt_service import BioGPTModel
+
 
 TREATMENT_OPTIONS = ["Treatment A", "Treatment B", "Treatment C"]
 
-def run_simulation(request: SimulationRequest):
-    patients = load_data("VirtualCure/data/patients.json")
-    patient = next((p for p in patients if p["id"] == request.patient_id), None)
-    
-    if not patient:
-        log_error(f"Patient {request.patient_id} not found for simulation.")
+# Initialize BioGPT Model
+biogpt = BioGPTModel()
+
+def run_simulation(request):
+    try:
+        prompt = f"""Analyze drug interaction for:
+        Drug: {request.drug_name}
+        Dosage: {request.dosage}mg
+        Frequency: {request.frequency}
+        
+        Consider patient profile and provide:
+        1. Expected effectiveness
+        2. Potential side effects
+        3. Drug interactions
+        4. Recommendations"""
+
+        # Call BioGPT for response
+        response = biogpt.generate_response(prompt)
+
+        return {
+            "effectiveness": response.get("effectiveness", 0.75),
+            "side_effects": response.get("side_effects", ["Unknown side effects"]),
+            "interactions": response.get("interactions", []),
+            "recommendations": response.get("recommendations", ["Consult with a doctor"])
+        }
+    except Exception as e:
+        print(f"Simulation error: {str(e)}")
         return None
-
-    recommended_treatment = random.choice(TREATMENT_OPTIONS)
-    success_rate = round(random.uniform(70, 95), 2)
-
-    log_info(f"Simulation run for patient {request.patient_id}. Treatment: {recommended_treatment}")
-
-    return SimulationResult(
-        patient_id=request.patient_id,
-        recommended_treatment=recommended_treatment,
-        success_rate=success_rate,
-        alternative_treatments=[t for t in TREATMENT_OPTIONS if t != recommended_treatment]
-    )
-

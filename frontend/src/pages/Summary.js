@@ -27,6 +27,7 @@ import {
   Warning,
   Print,
 } from "@mui/icons-material";
+import { MUIPieChart } from '../components/MUIPieChart';
 
 const Summary = () => {
   const navigate = useNavigate();
@@ -73,6 +74,9 @@ const Summary = () => {
     window.print();
   }
 
+  const chartData = [{idx: 1, value: Number((data.simulation.effectiveness * 100)?.toFixed(1)), label: "Confidence Level" },
+    {idx: 0, value: Number(100 - (data.simulation.effectiveness * 100)?.toFixed(1)), label: "No Confidence" }];
+
   return (
     <Container sx={{ py: 4 }}>
       <Paper elevation={3} sx={{ p: 4 }}>
@@ -112,6 +116,7 @@ const Summary = () => {
                       variant="outlined"
                     />
                   ))}
+                  {/* <MUIPieChart data={data?.user?.symptoms} doCal /> */}
                 </Box>
               </CardContent>
               <CardContent>
@@ -121,7 +126,8 @@ const Summary = () => {
                 </Typography>
                 <Typography variant="subtitle2" gutterBottom>
                   Consolidated Effectiveness:{" "}
-                  {(data.simulation.effectiveness * 100).toFixed(1)}%
+                  <b>{(data.simulation.effectiveness * 100).toFixed(1)}%</b>
+                  <MUIPieChart data={chartData} colors={["#00A36C", "#C41E3A"]} />
                 </Typography>
                 <div
                   style={{

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -17,6 +19,7 @@ import {
 } from "@mui/material";
 import { CheckCircle, ArrowBack, ArrowForward } from "@mui/icons-material";
 import axios from "axios";
+import MUIPieChart from "components/MUIPieChart";
 
 const InitialDiagnosis = () => {
   const navigate = useNavigate();
@@ -125,6 +128,9 @@ const InitialDiagnosis = () => {
     );
   }
 
+  const chartData = [{idx: 1, value: Number((diagnosis.confidence * 100)?.toFixed(1)), label: "Confidence Level" },
+    {idx: 0, value: Number(100 - (diagnosis.confidence * 100)?.toFixed(1)), label: "No Confidence" }];
+
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
       <Paper elevation={3} sx={{ p: 4 }}>
@@ -147,7 +153,8 @@ const InitialDiagnosis = () => {
 
             <Box sx={{ my: 3 }}>
               <Typography variant="subtitle1" gutterBottom>
-                Confidence Level: {(diagnosis.confidence * 100).toFixed(1)}%
+                Confidence Level: <b>{(diagnosis.confidence * 100).toFixed(1)}%</b>
+                <MUIPieChart data={chartData} colors={["#00A36C", "#C41E3A"]} />
               </Typography>
               <LinearProgress
                 variant="determinate"

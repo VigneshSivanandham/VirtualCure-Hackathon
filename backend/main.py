@@ -136,7 +136,7 @@ RECOMMENDATIONS:
 app.include_router(simulations.router)
 
 @app.post("/drug-simulation")
-async def simulate_drug_interaction(simulation: simulations.SimulationRequest):
+async def simulate_drug_interaction(simulation: DrugSimulation):
     """
     This endpoint takes drug details and calls BioGPT to generate an AI-powered drug interaction analysis.
     """
